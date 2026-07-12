@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from designesia.com/themes/seoly/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2026 11:49:34 GMT -->
+<head>
+      <title>Hexa Reach Solutions</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Hexa Reach Solutions — SEO & Digital Marketing" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/services.css">
+    <style>
+        .footer-logo{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 18px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+    transition:all .4s ease;
+}
+
+.footer-logo img{
+    width:160px;
+    height:auto;
+    display:block;
+    border-radius:12px;
+    transition:all .4s ease;
+}
+
+.footer-logo:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.12);
+    box-shadow:0 12px 35px rgba(255,138,0,.35);
+}
+
+.footer-logo:hover img{
+    transform:scale(1.05);
+}
+/*=========================================
+        CTA SECTION
+=========================================*/
+
+.service-cta{
+    padding:90px 0;
+}
+
+.cta-wrapper{
+
+    background:linear-gradient(135deg,#0A4D9B,#1E88E5,#42A5F5);
+    border-radius:30px;
+    padding:70px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 25px 60px rgba(10,77,155,.25);
+
+}
+
+/* Decorative Circles */
+
+.cta-wrapper::before{
+
+content:"";
+position:absolute;
+width:280px;
+height:280px;
+background:rgba(255,255,255,.08);
+border-radius:50%;
+top:-120px;
+right:-90px;
+
+}
+
+.cta-wrapper::after{
+
+content:"";
+position:absolute;
+width:220px;
+height:220px;
+background:rgba(255,255,255,.06);
+border-radius:50%;
+bottom:-110px;
+left:-70px;
+
+}
+
+.cta-tag{
+
+display:inline-block;
+padding:8px 20px;
+background:rgba(255,255,255,.15);
+color:#fff;
+border-radius:50px;
+font-size:14px;
+font-weight:600;
+margin-bottom:20px;
+
+}
+
+.cta-wrapper h2{
+
+font-size:46px;
+font-weight:700;
+color:#fff;
+margin-bottom:20px;
+
+}
+
+.cta-wrapper p{
+
+font-size:18px;
+line-height:1.9;
+color:rgba(255,255,255,.92);
+max-width:700px;
+margin:0;
+
+}
+
+.cta-btn{
+
+display:inline-flex;
+align-items:center;
+gap:12px;
+padding:18px 38px;
+background:#fff;
+color:#0A4D9B;
+font-weight:700;
+text-decoration:none;
+border-radius:60px;
+transition:.4s;
+
+}
+
+.cta-btn i{
+
+font-size:20px;
+
+}
+
+.cta-btn:hover{
+
+transform:translateY(-5px);
+background:#0A4D9B;
+color:#fff;
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+/*=========================
+      TABLET
+=========================*/
+
+@media(max-width:991px){
+
+.cta-wrapper{
+
+padding:50px 35px;
+text-align:center;
+
+}
+
+.cta-wrapper h2{
+
+font-size:36px;
+
+}
+
+.cta-wrapper p{
+
+max-width:100%;
+
+}
+
+}
+
+/*=========================
+      MOBILE
+=========================*/
+
+@media(max-width:767px){
+
+.service-cta{
+
+padding:60px 0;
+
+}
+
+.cta-wrapper{
+
+padding:35px 25px;
+border-radius:20px;
+
+}
+
+.cta-wrapper h2{
+
+font-size:28px;
+line-height:1.4;
+
+}
+
+.cta-wrapper p{
+
+font-size:16px;
+line-height:1.8;
+
+}
+
+.cta-btn{
+
+width:100%;
+justify-content:center;
+margin-top:25px;
+
+}
+
+}
+.pricing-banner{
+    position:relative;
+    overflow:hidden;
+}
+
+.pricing-banner .banner-overlay{
+    position:absolute;
+    inset:0;
+
+   
+
+    z-index:1;
+}
+
+#pricingNetworkCanvas{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+}
+
+.pricing-banner .container{
+    position:relative;
+    z-index:3;
+}
+.service-banner{
+    position:relative;
+    overflow:hidden;
+}
+
+#serviceNetworkCanvas{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+}
+
+.service-banner .container{
+    position:relative;
+    z-index:3;
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin nav bar -->
+
+        <!-- header begin nav bar -->
+        <header class="transparent header-light header-float">
+            <div class="container-float">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/Hexa-logo.png" alt="" >
+                                            <img class="logo-scroll" src="images/Hexa-logo.png" alt="" >
+                                            <img class="logo-mobile" src="images/Hexa-logo.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+
+                                <div class="de-flex-col header-col-mid">
+
+
+
+    <ul id="mainmenu">
+        <li><a class="menu-item" href="index.html">HOME</a></li>
+        <li><a class="menu-item" href="about.html">ABOUT US</a></li>
+
+        <li>
+            <a class="menu-item" href="services.html">SERVICES</a>
+            <!-- <ul>
+                <li><a href="seo.html">SEO Services</a></li>
+                <li><a href="social-media.html">Social Media Marketing</a></li>
+                <li><a href="google-meta-ads.html">Google & Meta Ads</a></li>
+                <li><a href="website-design.html">Website Design</a></li>
+                <li><a href="branding.html">Branding & Design</a></li>
+                <li><a href="lead-generation.html">Lead Generation</a></li>
+            </ul> -->
+        </li>
+        <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
+        <li><a class="menu-item" href="portfolio.html">PORTFOLIO</a></li>
+        <li><a class="menu-item" href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+                <div class="de-flex-col">
+                                    <div class="menu_side_area">          
+                                        <a class="btn-main fx-slide" href="contact.html"><span>Get Free Proposal</span></a>
+                                        <span id="menu-btn"></span>
+                                    </div>
+
+                                    <div id="btn-extra" class="img">
+                                        <img src="images/ui/dots.svg" class="" alt="">
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>        
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+<!-- section begin -->
+<section id="subheader" class="jarallax relative pricing-banner">
+
+    <!-- Background Image -->
+    <img src="images/background/bg2.png"
+         class="jarallax-img"
+         alt=""
+         style="opacity:.95; filter:brightness(.85);">
+
+    <!-- Dark Overlay -->
+    <div class="banner-overlay"></div>
+
+    <!-- Spider Web Canvas -->
+    <canvas id="pricingNetworkCanvas"></canvas>
+
+    <div class="container relative z-2">
+        <div class="row justify-content-between align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="subtitle s2 wow fadeInUp mb-2">
+                    Affordable Digital Solutions
+                </div>
+
+                <div class="clearfix"></div>
+
+                <h1 class="wow fadeInUp" data-wow-delay=".4s">
+                    Our Pricing Plans
+                </h1>
+
+                <div class="crumb-wrapper">
+                    <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            Our Pricing Plans
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="w-40 abs abs-middle end-0 xs-hide">
+                <!-- Optional Pricing Illustration -->
+                <!-- <img src="images/misc/pricing.png"
+                     class="w-100 wow scaleIn"
+                     data-wow-duration="2s"
+                     alt="Pricing"> -->
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- section close -->
+
+<!-- Pricing Section -->
+<section>
+    <div class="container">
+        <div class="text-center mb-5">
+    <div class="subtitle s2">Monthly Subscription Plans</div>
+    <h2>Social Media Marketing Packages</h2>
+    <p>
+        Affordable digital marketing plans designed to help businesses grow online with
+        creative content, advertising, branding, and lead generation.
+    </p>
+</div>
+        <div class="row g-4">
+
+            <!-- Basic Plan -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="bg-color text-light text-center p-30 rounded-1 h-100">
+                    <h3>Basic</h3>
+
+                    <div class="spacer-single"></div>
+
+                    <img src="images/icons/basic.png" class="w-100px" alt="Basic Plan">
+
+                    <div class="spacer-single"></div>
+
+                    <h2 class="mb-2">₹8,000</h2>
+                    <span>Per Month</span>
+
+                    <p class="mt-3">
+                        Perfect for startups and local businesses looking to build a strong social media presence.
+                    </p>
+
+                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
+                        <span>Choose Plan</span>
+                    </a>
+
+                    <div class="text-start">
+                        <ul class="ul-check white">
+                            <li>10 Graphic Designs</li>
+                            <li>2 Creative Reels</li>
+                            <li>Festival & Special Day Posts</li>
+                            <li>Facebook & Instagram Management</li>
+                            <li>Google Business Profile Support</li>
+                            <li>Competitor Research</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Business Plan -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="bg-color-2 text-light text-center p-30 rounded-1 h-100">
+
+                    <h3>Business</h3>
+
+                    <div class="spacer-single"></div>
+
+                    <img src="images/icons/chart.png" class="w-100px" alt="Business Plan">
+
+                    <div class="spacer-single"></div>
+
+                    <h2 class="mb-2">₹12,000</h2>
+                    <span>Per Month</span>
+
+                    <p class="mt-3">
+                        Ideal for growing businesses that want better reach and customer engagement.
+                    </p>
+
+                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
+                        <span>Choose Plan</span>
+                    </a>
+
+                    <div class="text-start">
+                        <ul class="ul-check white">
+                            <li>Everything in Basic Plan</li>
+                            <li>Facebook & Instagram Sponsored Ads</li>
+                            <li>Weekly Marketing Strategy Meeting</li>
+                            <li>Campaign Performance Review</li>
+                            <li>Audience Targeting</li>
+                            <li>Priority Support</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                <div class="bg-color-3 text-light text-center p-30 rounded-1 h-100">
+
+                    <h3>Professional</h3>
+
+                    <div class="spacer-single"></div>
+
+                    <img src="images/icons/startup.png" class="w-100px" alt="Professional Plan">
+
+                    <div class="spacer-single"></div>
+
+                    <h2 class="mb-2">₹18,000</h2>
+                    <span>Per Month</span>
+
+                    <p class="mt-3">
+                        Complete digital marketing solution for businesses ready to scale.
+                    </p>
+
+                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
+                        <span>Choose Plan</span>
+                    </a>
+
+                    <div class="text-start">
+                        <ul class="ul-check white">
+                            <li>Everything in Business Plan</li>
+                            <li>Google Business Optimization</li>
+                            <li>Local SEO Support</li>
+                            <li>Facebook & Google Campaigns</li>
+                            <li>Monthly WhatsApp Campaign</li>
+                            <li>Advanced Performance Reports</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Premium Ads Plan -->
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                <div class="bg-success text-light text-center p-30 rounded-1 h-100">
+
+                    <h3>Premium (Ads)</h3>
+
+                    <div class="spacer-single"></div>
+
+                    <img src="images/icons/crown.png" class="w-150px" alt="Premium Plan">
+
+                    <div class="spacer-single"></div>
+
+                    <h2 class="mb-2">₹26,000</h2>
+                    <span>Per Month</span>
+
+                    <p class="mt-3">
+                        The ultimate package with paid advertising and complete digital marketing management.
+                    </p>
+
+                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
+                        <span>Choose Plan</span>
+                    </a>
+
+                    <div class="text-start">
+                        <ul class="ul-check white">
+                            <li>Everything in Professional Plan</li>
+                            <li>Facebook & Instagram Ads</li>
+                            <li>Google & YouTube Ads</li>
+                            <li>WhatsApp Marketing</li>
+                            <li>LinkedIn & Pinterest Marketing</li>
+                            <li>Review Management & Customer Support</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+             
+            
+        </div>
+        <!-- content close -->
+        
+
+            <!--get in touch-->
+             <section>
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <div class="subtitle wow fadeInUp">Free Consultation</div>
+
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">
+                        Get In Touch With Us Today
+                    </h2>
+
+                    <p class="lead col-lg-10 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+                        Have a question, suggestion, or just want to say hi? We're here and happy to hear from you!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 gx-5 justify-content-center">
+
+            <!-- Contact Details -->
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".4s">
+                <div class="h-100 bg-color-2 text-light p-40 rounded-1">
+
+    <!-- Office Location -->
+    <div class="relative mb-4">
+        <i class="fa-solid fa-location-dot abs fs-30 p-3 bg-white rounded-circle text-primary"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Office Location</div>
+            Near Jaya Grand, Arundelpet 10th Line,<br>
+            Guntur - 522002
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="relative mb-4">
+        <i class="fa-solid fa-envelope abs fs-30 p-3 bg-white rounded-circle text-warning"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Email Us</div>
+            hexareachsolution<br>919@gmail.com
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="relative">
+        <i class="fa-solid fa-phone-volume abs fs-30 p-3 bg-white rounded-circle text-success"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Call Us</div>
+            +91 9581823990
+        </div>
+    </div>
+
+</div>
+            </div>
+
+            <!-- Contact Form -->
+<div class="col-lg-7 wow fadeInRight" data-wow-delay=".4s">
+
+     <div class="p-4 bg-color-op-3 rounded-1">
+
+        <form id="contact_form">
+
+            <div class="row g-4">
+
+                <!-- Full Name -->
+                <div class="col-md-6">
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Full Name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="form-control"
+                        placeholder="Mobile Number"
+                        required>
+                </div>
+
+                <!-- Service -->
+                <div class="col-md-6">
+
+                    <div class="relative">
+
+                        <select id="service" class="form-control" required>
+
+                            <option value="" selected disabled>
+                                Select a Service
+                            </option>
+
+                            <option>SEO Services</option>
+                            <option>Social Media Marketing</option>
+                            <option>Google Ads</option>
+                            <option>Meta Ads</option>
+                            <option>Website Development</option>
+                            <option>Branding & Graphic Design</option>
+                            <option>Content Marketing</option>
+                            <option>Lead Generation</option>
+                            <option>Video Editing</option>
+                            <option>Podcast Marketing</option>
+                            <option>Graphic Design</option>
+                            <option>Google Business Profile</option>
+
+                        </select>
+
+                        <i class="absolute top-0 end-0 pt-3 pe-3 id-color icofont-simple-down"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Message -->
+                <div class="col-md-12">
+
+                    <textarea
+                        id="message"
+                        class="form-control h-100px"
+                        placeholder="Tell us about your project..."
+                        required></textarea>
+
+                </div>
+
+                <!-- Submit -->
+                <div class="col-md-12 text-center">
+
+                    <button type="submit" class="btn-main">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Send on WhatsApp
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+        </div>
+
+        </div>
+
+    </div>
+           </section>
+              <!--get in touch end --> 
+            
+        </div>
+        <!-- content close -->
+        
+      <!-- Footer Begin -->
+        <footer class="footer-light">
+
+    <div class="container">
+
+        <div class="row gx-5">
+
+            <!-- Company Info -->
+            <div class="col-lg-4 col-sm-6">
+
+                <div class="spacer-20"></div>
+
+                <div class="footer-logo">
+                    <img src="images/Hexa-logo.png" alt="Hexa Reach Solutions">
+                </div>
+
+                <p>
+                    At Hexa Reach Solutions, we help businesses build a powerful digital presence
+                    through creative marketing, strategic branding, social media management,
+                    website development, SEO, paid advertising, and content that delivers
+                    measurable growth.
+                </p>
+
+                <div class="social-icons mb-sm-30">
+                    <a href="https://www.facebook.com/hexareachsolutions/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/hexareachsolutions/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/HexaReach">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@hexareachsolutions">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Hexa Reach Solutions</h5>
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="plans.html">Plans</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Our Services</h5>
+
+                            <ul>
+                                <li><a href="services.html#social-media">Social Media Marketing</a></li>
+            <li><a href="services.html#branding">Brand Promotions</a></li>
+            <li><a href="services.html#graphic-design">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html#SEO">Local SEO</a></li>
+            <li><a href="services.html#web">Website Designing</a></li>
+            <li><a href="services.html#podcast">Podcast Marketing</a></li>
+            <li><a href="services.html#business-profile">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+
+                <div class="widget">
+
+                    <!-- Location -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Office Location</h6>
+
+                            <p>
+                                Near Jaya Grand,
+                                Arundelpet 10th Line,<br>
+                                Guntur - 522002
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon email-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Email Us</h6>
+
+                            <p>
+                                hexareachsolutions919@gmail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon phone-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Call Us</h6>
+
+                            <p>
+                                +91 9581823990
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sub Footer -->
+    <div class="subfooter">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="de-flex">
+
+                        <div class="text-center">
+                            Copyright © 2026 Hexa Reach Solutions. All Rights Reserved.
+                        </div>
+
+                        <ul class="menu-simple">
+                            <!--
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            -->
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+        </footer>
+        <!-- Footer End -->
+    </div>
+
+         <!-- Overlay Content Begin -->
+        <div id="extra-wrap">
+
+    <div id="btn-close">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="extra-content">
+
+        <img
+            src="images/Hexa-logo.png"
+            class="w-150px"
+            alt="Hexa Reach Solutions"
+            style="border-radius:50px;">
+
+        <div class="spacer-30-line"></div>
+
+        <h5 class="mb-3">Our Services</h5>
+
+        <ul class="ul-check">
+            <li><a href="services.html#social-media">Social Media Marketing</a></li>
+            <li><a href="services.html#branding">Brand Promotions</a></li>
+            <li><a href="services.html#graphic-design">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html#SEO">Local SEO</a></li>
+            <li><a href="services.html#web">Website Designing</a></li>
+            <li><a href="services.html#podcast">Podcast Marketing</a></li>
+            <li><a href="services.html#business-profile">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+        </ul>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>Contact Us</h5>
+
+        <div>
+            <i class="fa-solid fa-clock me-2"></i>
+            Monday - Saturday | 08:00 AM - 06:00 PM
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Near Jaya Grand, Arundelpet 10th Line, Guntur - 522002
+        </div>
+
+        <div>
+            <i class="fa-solid fa-envelope me-2"></i>
+            hexareachsolutions919@gmail.com
+        </div>
+
+        <div>
+            <i class="fa-solid fa-phone me-2"></i>
+            +91 9581823990
+        </div>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>About Us</h5>
+
+        <p>
+            Hexa Reach Solutions - helps businesses grow with creative branding,
+            social media marketing, website development, SEO, Google Ads,
+            Meta Ads, content creation, and innovative digital strategies
+            that deliver measurable results.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/hexareachsolutions/">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/hexareachsolutions/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/HexaReach">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@hexareachsolutions">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+        </div>
+        <!-- Overlay Content End -->
+
+
+
+   <!-- JavaScript Files -->
+<script src="js/vendors.js"></script>
+<script src="js/designesia.js"></script>
+<script src="js/custom-marquee.js"></script>
+
+<script>
+document.getElementById("contact_form").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+`*New Enquiry - Hexa Reach Solutions*
+
+👤 Full Name: ${name}
+📧 Email: ${email}
+📱 Mobile: ${phone}
+💼 Service: ${service}
+
+📝 Message:
+${message}`;
+
+    let whatsappURL =
+        "https://wa.me/919581823990?text=" +
+        encodeURIComponent(text);
+
+    window.open(whatsappURL, "_blank");
+
+});
+</script>
+
+<script>
+    const pricingCanvas = document.getElementById("pricingNetworkCanvas");
+const pricingCtx = pricingCanvas.getContext("2d");
+
+function resizePricingCanvas() {
+    pricingCanvas.width = pricingCanvas.offsetWidth;
+    pricingCanvas.height = pricingCanvas.offsetHeight;
+}
+resizePricingCanvas();
+window.addEventListener("resize", resizePricingCanvas);
+
+const pricingMouse = {
+    x: null,
+    y: null,
+    radius: 180
+};
+
+pricingCanvas.addEventListener("mousemove", e => {
+    const rect = pricingCanvas.getBoundingClientRect();
+    pricingMouse.x = e.clientX - rect.left;
+    pricingMouse.y = e.clientY - rect.top;
+});
+
+pricingCanvas.addEventListener("mouseleave", () => {
+    pricingMouse.x = null;
+    pricingMouse.y = null;
+});
+
+const pricingParticles = [];
+
+for (let i = 0; i < 90; i++) {
+    pricingParticles.push({
+        x: Math.random() * pricingCanvas.width,
+        y: Math.random() * pricingCanvas.height,
+        vx: (Math.random() - .5) * .5,
+        vy: (Math.random() - .5) * .5
+    });
+}
+
+function animatePricingNetwork() {
+
+    pricingCtx.clearRect(0,0,pricingCanvas.width,pricingCanvas.height);
+
+    pricingParticles.forEach(p=>{
+
+        p.x += p.vx;
+        p.y += p.vy;
+
+        if(p.x<0||p.x>pricingCanvas.width)p.vx*=-1;
+        if(p.y<0||p.y>pricingCanvas.height)p.vy*=-1;
+
+        pricingCtx.beginPath();
+        pricingCtx.arc(p.x,p.y,2.2,0,Math.PI*2);
+        pricingCtx.fillStyle="rgba(255,180,0,.85)";
+        pricingCtx.fill();
+
+    });
+
+    for(let i=0;i<pricingParticles.length;i++){
+
+        for(let j=i+1;j<pricingParticles.length;j++){
+
+            const dx=pricingParticles[i].x-pricingParticles[j].x;
+            const dy=pricingParticles[i].y-pricingParticles[j].y;
+            const d=Math.sqrt(dx*dx+dy*dy);
+
+            if(d<130){
+
+                pricingCtx.beginPath();
+                pricingCtx.moveTo(pricingParticles[i].x,pricingParticles[i].y);
+                pricingCtx.lineTo(pricingParticles[j].x,pricingParticles[j].y);
+
+                pricingCtx.strokeStyle=`rgba(255,170,0,${1-d/130})`;
+                pricingCtx.lineWidth=1;
+                pricingCtx.stroke();
+
+            }
+
+        }
+
+    }
+
+    if(pricingMouse.x){
+
+        pricingParticles.forEach(p=>{
+
+            const dx=pricingMouse.x-p.x;
+            const dy=pricingMouse.y-p.y;
+
+            const d=Math.sqrt(dx*dx+dy*dy);
+
+            if(d<pricingMouse.radius){
+
+                pricingCtx.beginPath();
+                pricingCtx.moveTo(pricingMouse.x,pricingMouse.y);
+                pricingCtx.lineTo(p.x,p.y);
+
+                pricingCtx.strokeStyle=`rgba(255,120,0,${1-d/pricingMouse.radius})`;
+                pricingCtx.lineWidth=1.3;
+                pricingCtx.stroke();
+
+            }
+
+        });
+
+    }
+
+    requestAnimationFrame(animatePricingNetwork);
+}
+
+animatePricingNetwork();
+</script>
+
+<script>
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+</script>
+
+<script>
+document.addEventListener("copy", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.addEventListener("cut", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+</script>
+<script>
+document.addEventListener("keydown", function(e){
+
+    if(e.ctrlKey && (
+        e.key=="u" ||
+        e.key=="U" ||
+        e.key=="s" ||
+        e.key=="S" ||
+        e.key=="c" ||
+        e.key=="C" ||
+        e.key=="a" ||
+        e.key=="A" ||
+        e.key=="p" ||
+        e.key=="P"
+    )){
+        e.preventDefault();
+    }
+
+    if(e.key=="F12"){
+        e.preventDefault();
+    }
+
+});
+</script>
+<script>
+document.onkeydown=function(e){
+
+if(e.keyCode==123){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==73){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==74){
+return false;
+}
+
+if(e.ctrlKey && e.keyCode==85){
+return false;
+}
+
+}
+</script>
+
+</body>
+
+</html>

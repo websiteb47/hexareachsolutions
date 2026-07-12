@@ -1,0 +1,1665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from designesia.com/themes/seoly/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2026 11:49:34 GMT -->
+<head>
+      <title>Hexa Reach Solutions</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Hexa Reach Solutions — SEO & Digital Marketing" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .footer-logo{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 18px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+    transition:all .4s ease;
+}
+
+.footer-logo img{
+    width:160px;
+    height:auto;
+    display:block;
+    border-radius:12px;
+    transition:all .4s ease;
+}
+
+.footer-logo:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.12);
+    box-shadow:0 12px 35px rgba(255,138,0,.35);
+}
+
+.footer-logo:hover img{
+    transform:scale(1.05);
+}
+.contact-banner{
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-banner .banner-overlay{
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+}
+
+#contactNetworkCanvas{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.contact-banner .container{
+    position: relative;
+    z-index: 3;
+}
+
+.portfolio-section{
+
+    padding:110px 0;
+
+    background:#f8fafc;
+
+}
+
+.portfolio-section h2{
+
+    font-size:46px;
+
+    font-weight:800;
+
+    color:#1e293b;
+
+    margin-bottom:20px;
+
+}
+
+.portfolio-section p{
+
+    color:#64748b;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:30px;
+
+}
+
+.portfolio-counter{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:45px 25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.06);
+
+}
+
+.portfolio-counter:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 60px rgba(255,136,0,.18);
+
+}
+
+.portfolio-counter h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    background:linear-gradient(90deg,#ff7b00,#ffb100);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.portfolio-counter p{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#475569;
+
+}
+.portfolio-showcase{
+
+    padding:100px 0;
+    background:#fff;
+
+}
+
+.portfolio-card{
+
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+
+    transition:.45s;
+
+    border:1px solid #edf2f7;
+
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+
+}
+
+.portfolio-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 25px 60px rgba(255,140,0,.18);
+
+}
+
+.portfolio-image{
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+.portfolio-image img{
+
+    width:100%;
+    height:260px;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.portfolio-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.category{
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+
+    background:linear-gradient(90deg,#ff7b00,#ffb100);
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.portfolio-content{
+
+    padding:30px;
+
+}
+
+.portfolio-content h4{
+
+    font-size:24px;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.portfolio-content p{
+
+    color:#64748b;
+
+    line-height:28px;
+
+}
+
+.portfolio-content a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:20px;
+
+    font-weight:700;
+
+    color:#ff7b00;
+
+    text-decoration:none;
+
+}
+
+.portfolio-content a:hover{
+
+    color:#5b21b6;
+
+}
+.client-portfolio{
+    padding:100px 0;
+    background:#f8fbff;
+}
+
+.client-card{
+
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.5s;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.client-card img{
+
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    transition:.6s;
+
+}
+
+.client-overlay{
+
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(to top,
+    rgba(20,20,40,.95),
+    rgba(20,20,40,.15));
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    padding:30px;
+
+    color:#fff;
+
+    opacity:0;
+
+    transition:.5s;
+
+}
+
+.client-overlay h4{
+
+    color:#fff;
+    margin-bottom:10px;
+
+    transform:translateY(25px);
+    transition:.4s;
+
+}
+
+.client-overlay p{
+
+    color:#ddd;
+    margin-bottom:20px;
+
+    transform:translateY(25px);
+    transition:.5s;
+
+}
+
+.btn-view{
+
+    display:inline-block;
+    width:150px;
+    text-align:center;
+
+    padding:12px 22px;
+
+    border-radius:50px;
+
+    color:#fff;
+    text-decoration:none;
+
+    background:linear-gradient(90deg,#ff7a18,#6c3cff);
+
+    transform:translateY(30px);
+
+    transition:.5s;
+
+}
+
+.client-card:hover img{
+
+    transform:scale(1.12) rotate(2deg);
+
+}
+
+.client-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.2);
+
+}
+
+.client-card:hover .client-overlay{
+
+    opacity:1;
+
+}
+
+.client-card:hover h4{
+
+    transform:translateY(0);
+
+}
+
+.client-card:hover p{
+
+    transform:translateY(0);
+    transition-delay:.1s;
+
+}
+
+.client-card:hover .btn-view{
+
+    transform:translateY(0);
+    transition-delay:.2s;
+
+}
+
+.btn-view:hover{
+
+    background:linear-gradient(90deg,#6c3cff,#ff7a18);
+    color:#fff;
+
+}
+.client-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.client-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.client-card:hover img{
+    transform:scale(1.1);
+}
+
+.client-overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.15));
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    padding:20px;
+    opacity:0;
+    transition:.4s;
+}
+
+.client-card:hover .client-overlay{
+    opacity:1;
+}
+
+.client-overlay h4{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.client-overlay p{
+    color:#ddd;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+.btn-view{
+    display:inline-block;
+    padding:10px 20px;
+    background:#4f46e5;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-view:hover{
+    background:#ff6b00;
+    color:#fff;
+}
+
+@media (max-width:991px){
+    .client-card img{
+        height:230px;
+    }
+}
+
+@media (max-width:767px){
+    .client-card img{
+        height:220px;
+    }
+}
+
+@media (max-width:575px){
+    .client-card img{
+        height:250px;
+    }
+}
+.client-slider .owl-dots{
+    margin-top:35px;
+    text-align:center;
+}
+
+.client-slider .owl-dot span{
+    width:12px;
+    height:12px;
+    background:#d8d8d8;
+    display:block;
+    margin:5px;
+    border-radius:50%;
+    transition:.4s;
+}
+
+.client-slider .owl-dot.active span{
+    width:35px;
+    border-radius:30px;
+    background:linear-gradient(90deg,#ff7b00,#6b3cff);
+}
+.gallery-section{
+    background:#f8fbff;
+}
+
+.gallery-card{
+
+    position:relative;
+    overflow:hidden;
+    border-radius:18px;
+    cursor:pointer;
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.gallery-card img{
+
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:.6s;
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(rgba(0,0,0,.15),
+    rgba(0,0,0,.75));
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gallery-overlay i{
+
+    width:65px;
+    height:65px;
+
+    background:#fff;
+    color:#ff6b00;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+
+    transform:scale(0);
+
+    transition:.4s;
+
+}
+
+.gallery-card:hover img{
+
+    transform:scale(1.15) rotate(3deg);
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+.gallery-card:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-card:hover .gallery-overlay i{
+
+    transform:scale(1);
+
+}
+
+.gallery-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+    left:-50%;
+
+    width:60%;
+    height:250%;
+
+    background:rgba(255,255,255,.25);
+
+    transform:rotate(25deg);
+
+    transition:.8s;
+
+}
+
+.gallery-card:hover::before{
+
+    left:150%;
+
+}
+
+/* Responsive */
+
+@media(max-width:991px){
+
+.gallery-card img{
+
+height:220px;
+
+}
+
+}
+
+@media(max-width:767px){
+
+.gallery-card img{
+
+height:210px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.gallery-card img{
+
+height:240px;
+
+}
+
+}
+.reels-section{
+    background: #f5f5f5;
+    padding:90px 0;
+}
+
+.reels-wrapper{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.reel-card{
+    width:240px;
+    border-radius:20px;
+    overflow:hidden;
+    background:#111;
+    border:2px solid rgba(255,120,0,.25);
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+
+.reel-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    border-color:#ff7a00;
+    box-shadow:0 0 25px rgba(255,122,0,.5);
+}
+
+.reel-card video{
+    width:100%;
+    aspect-ratio:9/16;
+    object-fit:cover;
+    display:block;
+}
+
+/* Tablet */
+@media(max-width:992px){
+
+    .reel-card{
+        width:200px;
+    }
+
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .reels-wrapper{
+        overflow-x:auto;
+        justify-content:flex-start;
+        flex-wrap:nowrap;
+        padding-bottom:10px;
+        scroll-snap-type:x mandatory;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .reels-wrapper::-webkit-scrollbar{
+        display:none;
+    }
+
+    .reel-card{
+        min-width:180px;
+        scroll-snap-align:center;
+        flex:0 0 auto;
+    }
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin nav bar -->
+       <!-- Header Begin -->
+                 <header class="transparent header-light header-float">
+
+    <div class="container-float">
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="header-inner">
+
+                    <div class="de-flex sm-pt10">
+
+                        <!-- Logo -->
+                        <div class="de-flex-col">
+
+                            <div id="logo">
+                                <a href="index.html">
+                                    <img class="logo-main" src="images/Hexa-logo.png" alt="">
+                                    <img class="logo-scroll" src="images/Hexa-logo.png" alt="">
+                                    <img class="logo-mobile" src="images/Hexa-logo.png" alt="">
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- Logo End -->
+
+                        <!-- Navigation -->
+                        <div class="de-flex-col header-col-mid">
+
+                             <ul id="mainmenu">
+        <li><a class="menu-item" href="index.html">HOME</a></li>
+        <li><a class="menu-item" href="about.html">ABOUT US</a></li>
+
+        <li>
+            <a class="menu-item" href="services.html">SERVICES</a>
+            
+        </li>
+        <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
+        <li><a class="menu-item" href="portfolio.html">PORTFOLIO</a></li>
+        <li><a class="menu-item" href="contact.html">CONTACT</a></li>
+    </ul>
+
+                        </div>
+                        <!-- Navigation End -->
+
+                        <!-- Right Side -->
+                        <div class="de-flex-col">
+
+                            <div class="menu_side_area">
+
+                                <a class="btn-main fx-slide" href="contact.html">
+                                    <span>Get Free Proposal</span>
+                                </a>
+
+                                <span id="menu-btn"></span>
+
+                            </div>
+
+                            <div id="btn-extra" class="img">
+                                <img src="images/ui/dots.svg" alt="">
+                            </div>
+
+                        </div>
+                        <!-- Right Side End -->
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+                </header>
+        <!-- Header End -->
+
+
+
+        <!-- content begin -->
+            <div class="no-bottom no-top" id="content">
+
+    <div id="top"></div>
+
+<!-- section begin -->
+<section id="subheader" class="jarallax relative contact-banner">
+
+    <!-- Background Image -->
+    <img src="images/background/bg2.png"
+         class="jarallax-img"
+         alt=""
+         style="opacity:.95; filter:brightness(.85);">
+    <canvas id="contactNetworkCanvas"></canvas>
+    <!-- Dark Overlay -->
+    <div class="banner-overlay"></div>
+
+    <!-- Spider Web Animation -->
+    <canvas id="contactNetworkCanvas"></canvas>
+
+    <div class="container relative z-2">
+        <div class="row justify-content-between align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="subtitle s2 wow fadeInUp mb-2">
+                   Our Creative Work
+                </div>
+
+                <div class="clearfix"></div>
+
+                <h1 class="wow fadeInUp" data-wow-delay=".4s">
+                    Explore Our Portfolio
+                </h1>
+
+                <div class="crumb-wrapper">
+                    <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="active">
+                            Portfolio
+                          </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="w-40 abs abs-middle end-0 xs-hide">
+
+                <!-- Optional Contact Illustration -->
+                <!--
+                <img src="images/misc/contact.png"
+                     class="w-100 wow scaleIn"
+                     data-wow-duration="2s"
+                     alt="Contact Us">
+                -->
+
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- section close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+            <!-- section begin -->
+   
+                       
+
+<section class="portfolio-section">
+
+    <div class="container">
+
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+
+                <div class="subtitle s2">
+                    Featured Portfolio
+                </div>
+
+                <h2>
+                    Delivering Results That Matter
+                </h2>
+
+                <p>
+                    Explore some of our successful digital marketing campaigns,
+                    websites, branding projects and business growth stories.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="row mt-5 g-4">
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="portfolio-counter">
+
+                    <h2>
+                        <span class="timer"
+                              data-to="100"
+                              data-speed="3000">0</span>+
+                    </h2>
+
+                    <p>Projects Completed</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="portfolio-counter">
+
+                    <h2>
+                        <span class="timer"
+                              data-to="90"
+                              data-speed="3000">0</span>+
+                    </h2>
+
+                    <p>Happy Clients</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="portfolio-counter">
+
+                    <h2>
+                        <span class="timer"
+                              data-to="90"
+                              data-speed="3000">0</span>%
+                    </h2>
+
+                    <p>Client Satisfaction</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <div class="portfolio-counter">
+
+                    <h2>
+                        <span class="timer"
+                              data-to="5"
+                              data-speed="3000">0</span>+
+                    </h2>
+
+                    <p>Years Experience</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+            
+<!--client portfolio-->
+
+<section class="client-portfolio py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <div class="subtitle s2">Trusted By Our Clients</div>
+            <h2>Our Client Portfolio</h2>
+            <p>
+                We're proud to partner with businesses across various industries,
+                helping them grow through innovative digital marketing solutions.
+            </p>
+        </div>
+
+        <div class="owl-carousel client-slider">
+
+            <!-- Client 1 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/coastal-care.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Vijaya's Coastal Care Hospital</h4>
+                        <p>Website • SEO • Social Media</p>
+                        <a href="https://vijayascoastalcarehospitals.com/" target="_blank" class="btn-view">View Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 2 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/kaamakshi.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Kaamakshi Hospital</h4>
+                        <p>Facebook Page</p>
+                        <a href="https://www.facebook.com/kamaakshihospital/" target="_blank" class="btn-view">View Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 3 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/NS.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>NS Hospitals</h4>
+                        <p>Website Designing</p>
+                        <a href="https://nshospitals.in/" target="_blank" class="btn-view">View Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 4 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/siddarth.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Siddarth Gastro Care</h4>
+                        <p>Facebook Page</p>
+                        <a href="https://www.facebook.com/siddharthgastrocare/" target="_blank" class="btn-view">View Work</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 5 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/nervati.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Neravati Multi Speciality Hospital</h4>
+                        <p>Complete Digital Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 6 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/little-gems.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Little Gems School</h4>
+                        <p>SEO Campaign</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 7 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/A1.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>A1 Hospital</h4>
+                        <p>Meta Ads</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 8 -->
+            <div class="item">
+                <div class="client-card">
+                    <img src="images/clients/lasya.jpg" alt="">
+                    <div class="client-overlay">
+                        <h4>Lasya Speech & Hearing Center</h4>
+                        <p>Content Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+    </div>
+
+</section>
+<!---->
+
+<!-- =========================
+     Video Showcase Section
+========================= -->
+<section class="reels-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="subtitle">Our Creative Reels</span>
+            <h2>Latest Video Creations</h2>
+            <p>Creative short-form videos crafted by Hexa Reach Solutions.</p>
+        </div>
+
+        <div class="reels-wrapper">
+
+            <div class="reel-card">
+                <video controls playsinline preload="metadata" poster="images/reel1.jpg">
+                    <source src="images/gallery/1.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="reel-card">
+                <video controls playsinline preload="metadata" poster="images/reel2.jpg">
+                    <source src="images/gallery/2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="reel-card">
+                <video controls playsinline preload="metadata" poster="images/reel3.jpg">
+                    <source src="images/gallery/3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--gallary section-->
+<!-- Gallery Section -->
+<section class="gallery-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <div class="subtitle s2 wow fadeInUp">
+                Our Gallery
+            </div>
+
+            <h2 class="wow fadeInUp" data-wow-delay=".2s">
+                Moments That Define Our Work
+            </h2>
+
+            <p class="wow fadeInUp" data-wow-delay=".4s">
+                Explore our projects, branding campaigns, events, and success stories.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Image 1 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/1.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/2.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/3.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/4.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/5.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/6.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 7 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/9.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 8 -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="gallery-card">
+                    <img src="images/gallery/8.jpeg" alt="">
+                    <div class="gallery-overlay">
+                        <i class="fa fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!---->
+        </div>
+        <!-- content close -->
+        
+      <!-- Footer Begin -->
+        <footer class="footer-light">
+
+    <div class="container">
+
+        <div class="row gx-5">
+
+            <!-- Company Info -->
+            <div class="col-lg-4 col-sm-6">
+
+                <div class="spacer-20"></div>
+
+                <div class="footer-logo">
+                    <img src="images/Hexa-logo.png" alt="Hexa Reach Solutions">
+                </div>
+
+                <p>
+                    At Hexa Reach Solutions, we help businesses build a powerful digital presence
+                    through creative marketing, strategic branding, social media management,
+                    website development, SEO, paid advertising, and content that delivers
+                    measurable growth.
+                </p>
+
+                <div class="social-icons mb-sm-30">
+                    <a href="https://www.facebook.com/hexareachsolutions/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/hexareachsolutions/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/HexaReach">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@hexareachsolutions">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Hexa Reach Solutions</h5>
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="plans.html">Plans</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Our Services</h5>
+
+                            <ul>
+                                <li><a href="services.html#social-media">Social Media Marketing</a></li>
+            <li><a href="services.html#branding">Brand Promotions</a></li>
+            <li><a href="services.html#graphic-design">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html#SEO">Local SEO</a></li>
+            <li><a href="services.html#web">Website Designing</a></li>
+            <li><a href="services.html#podcast">Podcast Marketing</a></li>
+            <li><a href="services.html#business-profile">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+
+                <div class="widget">
+
+                    <!-- Location -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Office Location</h6>
+
+                            <p>
+                                Near Jaya Grand,
+                                Arundelpet 10th Line,<br>
+                                Guntur - 522002
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon email-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Email Us</h6>
+
+                            <p>
+                                hexareachsolutions919@gmail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon phone-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Call Us</h6>
+
+                            <p>
+                                +91 9581823990
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sub Footer -->
+    <div class="subfooter">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="de-flex">
+
+                        <div class="text-center">
+                            Copyright © 2026 Hexa Reach Solutions. All Rights Reserved.
+                        </div>
+
+                        <ul class="menu-simple">
+                            <!--
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            -->
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </footer>
+        <!-- Footer End -->
+    </div>
+
+   <!-- Overlay Content Begin -->
+        <div id="extra-wrap">
+
+    <div id="btn-close">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="extra-content">
+
+        <img
+            src="images/Hexa-logo.png"
+            class="w-150px"
+            alt="Hexa Reach Solutions"
+            style="border-radius:50px;">
+
+        <div class="spacer-30-line"></div>
+
+        <h5 class="mb-3">Our Services</h5>
+
+        <ul class="ul-check">
+            <li><a href="services.html">Social Media Marketing</a></li>
+            <li><a href="services.html">Brand Promotions</a></li>
+            <li><a href="services.html">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html">Local SEO</a></li>
+            <li><a href="services.html">Website Designing</a></li>
+            <li><a href="services.html">Podcast Marketing</a></li>
+            <li><a href="services.html">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html">Video Editing</a></li>
+        </ul>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>Contact Us</h5>
+
+        <div>
+            <i class="fa-solid fa-clock me-2"></i>
+            Monday - Saturday | 08:00 AM - 06:00 PM
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Near Jaya Grand, Arundelpet 10th Line, Guntur - 522002
+        </div>
+
+        <div>
+            <i class="fa-solid fa-envelope me-2"></i>
+            hexareachsolutions919@gmail.com
+        </div>
+
+        <div>
+            <i class="fa-solid fa-phone me-2"></i>
+            +91 9581823990
+        </div>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>About Us</h5>
+
+        <p>
+            Hexa Reach Solutions - helps businesses grow with creative branding,
+            social media marketing, website development, SEO, Google Ads,
+            Meta Ads, content creation, and innovative digital strategies
+            that deliver measurable results.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/hexareachsolutions/">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/hexareachsolutions/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/HexaReach">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@hexareachsolutions">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+        </div>
+        <!-- Overlay Content End -->
+
+    <div id="buy-now" class="show-on-scroll">
+        <a class="btn-buy" href="https://themeforest.net/item/seoly-seo-digital-marketing-website-template/59360786" target="_blank">Buy on <img src="demo/envato.svg" alt=""></a>
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/custom-marquee.js"></script>
+   
+</body>
+<script>
+    $('.client-slider').owlCarousel({
+    loop:true,
+    margin:25,
+    nav:false,
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:3500,
+    smartSpeed:700,
+
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:2
+        },
+        992:{
+            items:4
+        }
+    }
+});
+</script>
+<script>
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+</script>
+
+<script>
+document.addEventListener("copy", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.addEventListener("cut", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+</script>
+<script>
+document.addEventListener("keydown", function(e){
+
+    if(e.ctrlKey && (
+        e.key=="u" ||
+        e.key=="U" ||
+        e.key=="s" ||
+        e.key=="S" ||
+        e.key=="c" ||
+        e.key=="C" ||
+        e.key=="a" ||
+        e.key=="A" ||
+        e.key=="p" ||
+        e.key=="P"
+    )){
+        e.preventDefault();
+    }
+
+    if(e.key=="F12"){
+        e.preventDefault();
+    }
+
+});
+</script>
+<script>
+document.onkeydown=function(e){
+
+if(e.keyCode==123){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==73){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==74){
+return false;
+}
+
+if(e.ctrlKey && e.keyCode==85){
+return false;
+}
+
+}
+</script>
+
+</body>
+
+</html>

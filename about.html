@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from designesia.com/themes/seoly/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 Jul 2026 11:49:34 GMT -->
+<head>
+      <title>Hexa Reach Solutions</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" >
+    <meta content="Hexa Reach Solutions — SEO & Digital Marketing" name="description" >
+    <meta content="" name="keywords" >
+    <meta content="" name="author" >
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" >
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .about-banner{
+    position:relative;
+    overflow:hidden;
+}
+
+.about-banner .banner-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(16,24,40,.38);
+
+    z-index:1;
+}
+
+.about-banner .container{
+    position:relative;
+    z-index:4;
+}
+
+.about-banner h1{
+
+    font-size:68px;
+    font-weight:800;
+    color:#fff;
+
+    text-shadow:
+        0 8px 25px rgba(0,0,0,.35);
+
+}
+
+.about-banner p{
+
+    color:#eef2f7;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.about-banner .subtitle{
+
+    display:inline-block;
+
+    padding:10px 24px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    color:#FFD54F;
+
+}
+        .footer-logo{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:10px 18px;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:18px;
+    backdrop-filter:blur(10px);
+    transition:all .4s ease;
+}
+
+.footer-logo img{
+    width:160px;
+    height:auto;
+    display:block;
+    border-radius:12px;
+    transition:all .4s ease;
+}
+
+.footer-logo:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.12);
+    box-shadow:0 12px 35px rgba(255,138,0,.35);
+}
+
+.footer-logo:hover img{
+    transform:scale(1.05);
+}
+.de_count h3{
+    color:#1e293b;
+    background:linear-gradient(
+        120deg,
+        #1e293b 0%,
+        #1e293b 40%,
+        #ffffff 50%,
+        #1e293b 60%,
+        #1e293b 100%
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    background-size:250% auto;
+    animation:shine 3s linear infinite;
+}
+
+.de_count .fs-18{
+    color:#4b5563;
+}
+.particles{
+    position:absolute;
+    inset:0;
+    z-index:1;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+.particles span{
+    position:absolute;
+    bottom:-80px;
+    border-radius:50%;
+    animation:floatParticle linear infinite, twinkle 2.5s ease-in-out infinite alternate;
+
+    background:radial-gradient(circle,
+        #fff8b0 0%,
+        #ffd54f 25%,
+        #ffb300 55%,
+        #ff8f00 75%,
+        #ff5722 100%);
+
+    box-shadow:
+        0 0 8px rgba(255,235,59,.9),
+        0 0 18px rgba(255,167,38,.8),
+        0 0 35px rgba(255,87,34,.7);
+
+    opacity:.9;
+}
+
+/* Golden */
+.particles span:nth-child(3n){
+    background:#FFD54F;
+    box-shadow:
+        0 0 10px #FFD54F,
+        0 0 22px #FFC107,
+        0 0 40px #FFB300;
+}
+
+/* Orange */
+.particles span:nth-child(4n){
+    background:#FFA726;
+    box-shadow:
+        0 0 12px #FFA726,
+        0 0 24px #FB8C00,
+        0 0 45px #F57C00;
+}
+
+/* Orange Red */
+.particles span:nth-child(5n){
+    background:#FF7043;
+    box-shadow:
+        0 0 10px #FF7043,
+        0 0 22px #FF5722,
+        0 0 42px #F4511E;
+}
+
+/* Light Yellow */
+.particles span:nth-child(7n){
+    background:#FFF59D;
+    box-shadow:
+        0 0 12px #FFF59D,
+        0 0 25px #FFEE58,
+        0 0 45px #FFD54F;
+}
+
+/* Different Sizes */
+.particles span:nth-child(odd){
+    width:8px;
+    height:8px;
+}
+
+.particles span:nth-child(even){
+    width:14px;
+    height:14px;
+}
+
+.particles span:nth-child(6n){
+    width:20px;
+    height:20px;
+}
+
+/* Positions */
+.particles span:nth-child(1){left:3%;animation-duration:12s;}
+.particles span:nth-child(2){left:10%;animation-duration:18s;}
+.particles span:nth-child(3){left:17%;animation-duration:14s;}
+.particles span:nth-child(4){left:24%;animation-duration:20s;}
+.particles span:nth-child(5){left:31%;animation-duration:16s;}
+.particles span:nth-child(6){left:38%;animation-duration:19s;}
+.particles span:nth-child(7){left:45%;animation-duration:15s;}
+.particles span:nth-child(8){left:52%;animation-duration:21s;}
+.particles span:nth-child(9){left:59%;animation-duration:17s;}
+.particles span:nth-child(10){left:66%;animation-duration:18s;}
+.particles span:nth-child(11){left:73%;animation-duration:13s;}
+.particles span:nth-child(12){left:80%;animation-duration:22s;}
+.particles span:nth-child(13){left:87%;animation-duration:16s;}
+.particles span:nth-child(14){left:94%;animation-duration:19s;}
+.particles span:nth-child(15){left:98%;animation-duration:14s;}
+
+@keyframes floatParticle{
+    0%{
+        transform:translateY(0) scale(.5);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    85%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-900px) scale(1.4);
+        opacity:0;
+    }
+}
+
+@keyframes twinkle{
+    from{
+        opacity:.4;
+        filter:blur(0px);
+    }
+
+    to{
+        opacity:1;
+        filter:blur(1px);
+    }
+}
+
+@keyframes floatParticle{
+
+    from{
+        transform:translateY(0) scale(.5);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    80%{
+        opacity:1;
+    }
+
+    to{
+        transform:translateY(-900px) scale(1.3);
+        opacity:0;
+    }
+
+}
+.certification-section{
+    background:#f8fbff;
+    padding:90px 0;
+}
+
+.certification-section h2{
+    font-size:42px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.certification-section p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+}
+
+.certificate-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    background:#fff;
+    box-shadow:0 15px 45px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.certificate-card img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.certificate-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
+}
+
+.certificate-card:hover img{
+    transform:scale(1.05);
+}
+
+.certificate-overlay{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    padding:18px;
+    background:linear-gradient(to top,rgba(0,0,0,.8),transparent);
+}
+
+.certificate-overlay h5{
+    color:#fff;
+    margin:0;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.certification-section{
+    padding:60px 0;
+}
+
+.certification-section h2{
+    font-size:30px;
+}
+
+.certification-section p{
+    font-size:15px;
+    padding:0 10px;
+}
+
+.certificate-card{
+    margin-bottom:20px;
+}
+
+}
+.ceo-image{
+
+    position:relative;
+    display:inline-block;
+    border-radius:25px;
+    overflow:hidden;
+
+    /* box-shadow:0 30px 70px rgba(0,0,0,.18); */
+
+    transition:.45s;
+
+}
+
+.ceo-image img{
+
+    border-radius:25px;
+    width:100%;
+    max-width:480px;
+
+    transition:.45s;
+
+}
+
+.ceo-image:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.ceo-image:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.certified-badge{
+
+    position:absolute;
+
+    bottom:20px;
+    left:20px;
+
+    background:linear-gradient(45deg,#ff7a00,#ffb347);
+
+    color:#fff;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    box-shadow:0 10px 30px rgba(255,122,0,.35);
+
+}
+
+@media(max-width:991px){
+
+.ceo-image{
+
+margin-top:40px;
+
+}
+
+.ceo-image img{
+
+max-width:100%;
+
+}
+
+}
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+         <!-- header begin nav bar -->
+        <header class="transparent header-light header-float">
+            <div class="container-float">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-inner">
+                            <div class="de-flex sm-pt10">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img class="logo-main" src="images/Hexa-logo.png" alt="" >
+                                            <img class="logo-scroll" src="images/Hexa-logo.png" alt="" >
+                                            <img class="logo-mobile" src="images/Hexa-logo.png" alt="" >
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+
+                                <div class="de-flex-col header-col-mid">
+
+
+
+    <ul id="mainmenu">
+        <li><a class="menu-item" href="index.html">HOME</a></li>
+        <li><a class="menu-item" href="about.html">ABOUT US</a></li>
+
+        <li>
+            <a class="menu-item" href="services.html">SERVICES</a>
+        </li>
+        <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
+        <li><a class="menu-item" href="portfolio.html">PORTFOLIO</a></li>
+        <li><a class="menu-item" href="contact.html">CONTACT</a></li>
+    </ul>
+</div>
+
+
+
+
+                                <div class="de-flex-col">
+                                    <div class="menu_side_area">          
+                                        <a class="btn-main fx-slide" href="contact.html"><span>Get Free Proposal</span></a>
+                                        <span id="menu-btn"></span>
+                                    </div>
+
+                                    <div id="btn-extra" class="img">
+                                        <img src="images/ui/dots.svg" class="" alt="">
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>        
+        <!-- header close -->
+
+
+
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+
+            <div id="top"></div>
+<section id="subheader" class="jarallax relative about-banner">
+
+    <!-- Background Image -->
+    <img src="images/background/bg2.png"
+         class="jarallax-img"
+         alt=""
+         style="opacity:.95; filter:brightness(.82);">
+
+    <!-- Soft Overlay -->
+    <div class="banner-overlay"></div>
+
+
+
+    <!-- Glowing Particles -->
+    <div class="particles">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container relative z-2">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-9 text-center">
+
+                <div class="subtitle s2 wow fadeInUp mb-3">
+                    Empowering Businesses with Creative Digital Solutions
+                </div>
+
+                <h1 class="wow fadeInUp"
+                    data-wow-delay=".3s">
+
+                    About Hexa Reach Solutions
+
+                </h1>
+
+                <p class="wow fadeInUp mt-4"
+                   data-wow-delay=".5s">
+
+                    We help businesses grow through innovative digital marketing,
+                    creative branding, website development, SEO,
+                    paid advertising and powerful content strategies
+                    that deliver measurable results.
+
+                </p>
+
+                <div class="crumb-wrapper d-flex justify-content-center mt-4">
+
+                    <ul class="crumb wow fadeInUp"
+                        data-wow-delay=".7s">
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="active">
+                            About Us
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+            <!--who we are section-->
+            <section class="relative overflow-hidden">
+
+    <div class="container relative z-1000">
+
+        <div class="row py-4 g-4 gx-5 justify-content-between align-items-center">
+
+            <!-- Image -->
+            <div class="col-lg-6">
+
+                <div class="relative rounded-1 overflow-hidden mb-3 wow scaleIn">
+                                    <div class="subtitle wow fadeInUp">Who We Are</div>
+
+                <h3 class="mb-0 wow fadeInUp">
+                    Empowering Businesses with Creative Digital Solutions
+                </h3>
+                    <img src="images/background/right-img.png" class="img-fluid" alt="Hexa Reach Solutions">
+                </div>
+
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-6">
+
+
+
+                <div class="spacer-single"></div>
+
+                <p class="lead wow fadeInUp" data-wow-delay=".2s">
+                    At <strong>Hexa Reach Solutions</strong>, we help businesses grow through innovative digital marketing, creative branding, website development, SEO, paid advertising, and powerful content strategies that deliver measurable results.
+                </p>
+
+                <div class="spacer-half"></div>
+
+                <div class="row g-4">
+
+                    <!-- Vision -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+
+                        <h3 style="color: red;">Our Vision</h3>
+
+                        <p>
+                            To become a trusted digital growth partner by empowering businesses with innovative marketing solutions, creative ideas, and cutting-edge technology.
+                        </p>
+
+                    </div>
+
+                    <!-- Mission -->
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+
+                        <h3 style="color: red;">Our Mission</h3>
+
+                        <p>
+                            To deliver result-driven digital marketing services that strengthen brands, increase online visibility, generate quality leads, and accelerate business growth.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+ <div class="spacer-single"></div>
+
+<div class="row g-4"
+     style="background:linear-gradient(135deg,rgba(37,99,235,.15),rgba(139,92,246,.15));
+            backdrop-filter:blur(20px);
+            -webkit-backdrop-filter:blur(20px);
+            border:1px solid rgba(255,255,255,.12);
+            border-radius:25px;
+            padding:35px 20px;
+            box-shadow:0 15px 40px rgba(0,0,0,.25);">
+
+    <div class="col-md-4 col-sm-6 mb-sm-30">
+        <div class="de_count text-center fs-15 wow fadeInRight" data-wow-delay=".0s">
+            <h3 class="fs-72 fs-xs-60 mb-0">+<span class="timer" data-to="150" data-speed="3000">0</span>%</h3>
+            <div class="fs-18">Conversion Rate Increased</div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 mb-sm-30">
+        <div class="de_count text-center fs-15 wow fadeInRight" data-wow-delay=".2s">
+            <h3 class="fs-72 fs-xs-60 mb-0">+<span class="timer" data-to="25" data-speed="3000">0</span></h3>
+            <div class="fs-18">Happy Customers</div>
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 mb-sm-30">
+        <div class="de_count text-center fs-15 wow fadeInRight" data-wow-delay=".4s">
+            <h3 class="fs-72 fs-xs-60 mb-0">+<span class="timer" data-to="10" data-speed="3000">0</span>M</h3>
+            <div class="fs-18">Value of Projects</div>
+        </div>
+    </div>
+
+</div>
+
+            </section>
+            <!--end -->
+          
+<!-- ==========================
+     FOUNDER & CEO
+=========================== -->
+
+<section class="bg-color-2-op-1 overflow-hidden rounded-1 mx-4 py-5">
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- LEFT CONTENT -->
+
+            <div class="col-lg-6">
+
+                <div class="subtitle wow fadeInUp">
+                    Founder & CEO
+                </div>
+
+                <h2 class="wow fadeInUp mt-2">
+                    The Vision Behind Hexa Reach Solutions
+                </h2>
+
+                <p class="wow fadeInUp mt-4">
+                    Surekha Pothakamuri is the Founder & CEO of
+                    <strong>Hexa Reach Solutions</strong> and a passionate
+                    Digital Marketing Strategist committed to helping
+                    businesses build a powerful online presence.
+                </p>
+
+                <p class="wow fadeInUp">
+
+                    With professional certifications in
+                    <strong>Google My Business</strong> and
+                    <strong>Facebook & Instagram Ads</strong>,
+                    she combines creativity, strategic thinking, and
+                    real-world experience to deliver impactful digital
+                    marketing solutions. From SEO and branding to website
+                    development and paid advertising, her focus is on
+                    driving measurable business growth.
+
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-6 mb-3">
+                        <i class="ri-checkbox-circle-fill text-warning me-2"></i>
+                        Google My Business Certified
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <i class="ri-checkbox-circle-fill text-warning me-2"></i>
+                        Facebook & Instagram Ads Certified
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <i class="ri-checkbox-circle-fill text-warning me-2"></i>
+                        SEO Strategist
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <i class="ri-checkbox-circle-fill text-warning me-2"></i>
+                        Digital Marketing Expert
+                    </div>
+
+                </div>
+
+                <div class="mt-4">
+
+                    <a href="contact.html" class="btn-main">
+                        Let's Work Together
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+
+            <div class="col-lg-6 text-center">
+
+                <div class="ceo-image">
+
+                    <img src="images/gallery/surekha.jpeg"
+                        class="img-fluid"
+                        alt="Surekha Pothakamuri" style="border-radius: 50%;">
+
+                    <div class="certified-badge">
+                        ✔ Certified Expert
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     OUR CERTIFICATIONS
+=========================== -->
+<section class="certification-section py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="subtitle">Our Certifications</span>
+            <h2>Certified Professionals You Can Trust</h2>
+            <p>
+                Our certifications reflect our commitment to delivering
+                industry-standard digital marketing solutions with expertise
+                and professionalism.
+            </p>
+        </div>
+
+        <div class="row justify-content-center g-4">
+
+            <!-- Certificate 1 -->
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="certificate-card">
+
+                    <img src="images/gallery/gallery7.jpeg"
+                        alt="Google Certification">
+
+                    <div class="certificate-overlay">
+                        <h5>Google Certification</h5>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Certificate 2 -->
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="certificate-card">
+
+                    <img src="images/gallery/gallery9.jpeg"
+                        alt="Meta Certification">
+
+                    <div class="certificate-overlay">
+                        <h5>Meta Certification</h5>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+             
+
+            <!--get in touch-->
+             <section>
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <div class="subtitle wow fadeInUp">Free Consultation</div>
+
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">
+                        Get In Touch With Us Today
+                    </h2>
+
+                    <p class="lead col-lg-10 offset-lg-1 wow fadeInUp" data-wow-delay=".4s">
+                        Have a question, suggestion, or just want to say hi? We're here and happy to hear from you!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 gx-5 justify-content-center">
+
+            <!-- Contact Details -->
+            <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".4s">
+                <div class="h-100 bg-color-2 text-light p-40 rounded-1">
+
+    <!-- Office Location -->
+    <div class="relative mb-4">
+        <i class="fa-solid fa-location-dot abs fs-30 p-3 bg-white rounded-circle text-primary"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Office Location</div>
+            Near Jaya Grand, Arundelpet 10th Line,<br>
+            Guntur - 522002
+        </div>
+    </div>
+
+    <!-- Email -->
+    <div class="relative mb-4">
+        <i class="fa-solid fa-envelope abs fs-30 p-3 bg-white rounded-circle text-warning"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Email Us</div>
+            hexareachsolution<br>919@gmail.com
+        </div>
+    </div>
+
+    <!-- Phone -->
+    <div class="relative">
+        <i class="fa-solid fa-phone-volume abs fs-30 p-3 bg-white rounded-circle text-success"></i>
+
+        <div class="ms-80px">
+            <div class="fw-bold text-white">Call Us</div>
+            +91 9581823990
+        </div>
+    </div>
+
+</div>
+            </div>
+
+            <!-- Contact Form -->
+<div class="col-lg-7 wow fadeInRight" data-wow-delay=".4s">
+
+     <div class="p-4 bg-color-op-3 rounded-1">
+
+        <form id="contact_form">
+
+            <div class="row g-4">
+
+                <!-- Full Name -->
+                <div class="col-md-6">
+                    <input
+                        type="text"
+                        id="name"
+                        class="form-control"
+                        placeholder="Full Name"
+                        required>
+                </div>
+
+                <!-- Email -->
+                <div class="col-md-6">
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Email Address"
+                        required>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-6">
+                    <input
+                        type="tel"
+                        id="phone"
+                        class="form-control"
+                        placeholder="Mobile Number"
+                        required>
+                </div>
+
+                <!-- Service -->
+                <div class="col-md-6">
+
+                    <div class="relative">
+
+                        <select id="service" class="form-control" required>
+
+                            <option value="" selected disabled>
+                                Select a Service
+                            </option>
+
+                            <option>SEO Services</option>
+                            <option>Social Media Marketing</option>
+                            <option>Google Ads</option>
+                            <option>Meta Ads</option>
+                            <option>Website Development</option>
+                            <option>Branding & Graphic Design</option>
+                            <option>Content Marketing</option>
+                            <option>Lead Generation</option>
+                            <option>Video Editing</option>
+                            <option>Podcast Marketing</option>
+                            <option>Graphic Design</option>
+                            <option>Google Business Profile</option>
+
+                        </select>
+
+                        <i class="absolute top-0 end-0 pt-3 pe-3 id-color icofont-simple-down"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Message -->
+                <div class="col-md-12">
+
+                    <textarea
+                        id="message"
+                        class="form-control h-100px"
+                        placeholder="Tell us about your project..."
+                        required></textarea>
+
+                </div>
+
+                <!-- Submit -->
+                <div class="col-md-12 text-center">
+
+                    <button type="submit" class="btn-main">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Send on WhatsApp
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+        </div>
+
+        </div>
+
+    </div>
+           </section>
+              <!--get in touch end --> 
+            
+        </div>
+        <!-- content close -->
+        
+            <footer class="footer-light">
+
+    <div class="container">
+
+        <div class="row gx-5">
+
+            <!-- Company Info -->
+            <div class="col-lg-4 col-sm-6">
+
+                <div class="spacer-20"></div>
+
+                <div class="footer-logo">
+                    <img src="images/Hexa-logo.png" alt="Hexa Reach Solutions">
+                </div>
+
+                <p>
+                    At Hexa Reach Solutions, we help businesses build a powerful digital presence
+                    through creative marketing, strategic branding, social media management,
+                    website development, SEO, paid advertising, and content that delivers
+                    measurable growth.
+                </p>
+
+                <div class="social-icons mb-sm-30">
+                    <a href="https://www.facebook.com/hexareachsolutions/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/hexareachsolutions/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://x.com/HexaReach">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/@hexareachsolutions">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Hexa Reach Solutions</h5>
+
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="plans.html">Plans</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6">
+
+                        <div class="widget">
+
+                            <h5>Our Services</h5>
+
+                            <ul>
+ <li><a href="services.html#social-media">Social Media Marketing</a></li>
+            <li><a href="services.html#branding">Brand Promotions</a></li>
+            <li><a href="services.html#graphic-design">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html#SEO">Local SEO</a></li>
+            <li><a href="services.html#web">Website Designing</a></li>
+            <li><a href="services.html#podcast">Podcast Marketing</a></li>
+            <li><a href="services.html#business-profile">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html#video-editing">Video Editing</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+
+                <div class="widget">
+
+                    <!-- Location -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Office Location</h6>
+
+                            <p>
+                                Near Jaya Grand,
+                                Arundelpet 10th Line,<br>
+                                Guntur - 522002
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon email-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Email Us</h6>
+
+                            <p>
+                                hexareachsolutions919@gmail.com
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon phone-icon">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </div>
+
+                        <div class="contact-info">
+                            <h6>Call Us</h6>
+
+                            <p>
+                                +91 9581823990
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sub Footer -->
+    <div class="subfooter">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <div class="de-flex">
+
+                        <div class="text-center">
+                            Copyright © 2026 Hexa Reach Solutions. All Rights Reserved.
+                        </div>
+
+                        <ul class="menu-simple">
+                            <!--
+                            <li><a href="#">Terms &amp; Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            -->
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+            </footer>
+            <!-- Footer End -->
+    </div>
+
+         <!-- Overlay Content Begin -->
+        <div id="extra-wrap">
+
+    <div id="btn-close">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="extra-content">
+
+        <img
+            src="images/Hexa-logo.png"
+            class="w-150px"
+            alt="Hexa Reach Solutions"
+            style="border-radius:50px;">
+
+        <div class="spacer-30-line"></div>
+
+        <h5 class="mb-3">Our Services</h5>
+
+        <ul class="ul-check">
+            <li><a href="services.html">Social Media Marketing</a></li>
+            <li><a href="services.html">Brand Promotions</a></li>
+            <li><a href="services.html">Graphic Designing</a></li>
+            <li><a href="services.html">Lead Generation</a></li>
+            <li><a href="services.html">Local SEO</a></li>
+            <li><a href="services.html">Website Designing</a></li>
+            <li><a href="services.html">Podcast Marketing</a></li>
+            <li><a href="services.html">Google-My-Business Profile Management</a></li>
+            <li><a href="services.html">Video Editing</a></li>
+        </ul>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>Contact Us</h5>
+
+        <div>
+            <i class="fa-solid fa-clock me-2"></i>
+            Monday - Saturday | 08:00 AM - 06:00 PM
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot me-2"></i>
+            Near Jaya Grand, Arundelpet 10th Line, Guntur - 522002
+        </div>
+
+        <div>
+            <i class="fa-solid fa-envelope me-2"></i>
+            hexareachsolutions919@gmail.com
+        </div>
+
+        <div>
+            <i class="fa-solid fa-phone me-2"></i>
+            +91 9581823990
+        </div>
+
+        <div class="spacer-30-line"></div>
+
+        <h5>About Us</h5>
+
+        <p>
+            Hexa Reach Solutions - helps businesses grow with creative branding,
+            social media marketing, website development, SEO, Google Ads,
+            Meta Ads, content creation, and innovative digital strategies
+            that deliver measurable results.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.facebook.com/hexareachsolutions/">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="https://www.instagram.com/hexareachsolutions/">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://x.com/HexaReach">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@HexaReachDigitalPodcast">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://www.youtube.com/@hexareachsolutions">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+        </div>
+        <!-- Overlay Content End -->
+
+  
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/vendors.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src="js/custom-marquee.js"></script>
+
+    <script>
+document.getElementById("contact_form").addEventListener("submit", function (e) {
+
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let phone = document.getElementById("phone").value;
+    let service = document.getElementById("service").value;
+    let message = document.getElementById("message").value;
+
+    let text =
+`*New Enquiry - Hexa Reach Solutions*
+
+👤 Full Name: ${name}
+📧 Email: ${email}
+📱 Mobile: ${phone}
+💼 Service: ${service}
+
+📝 Message:
+${message}`;
+
+    let whatsappURL =
+        "https://wa.me/919581823990?text=" +
+        encodeURIComponent(text);
+
+    window.open(whatsappURL, "_blank");
+
+});
+</script>
+   
+<script>
+document.addEventListener("contextmenu", function(e){
+    e.preventDefault();
+});
+</script>
+
+<script>
+document.addEventListener("copy", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.addEventListener("cut", function(e){
+    e.preventDefault();
+});
+</script>
+<script>
+document.querySelectorAll("img").forEach(img=>{
+    img.setAttribute("draggable","false");
+});
+</script>
+<script>
+document.addEventListener("keydown", function(e){
+
+    if(e.ctrlKey && (
+        e.key=="u" ||
+        e.key=="U" ||
+        e.key=="s" ||
+        e.key=="S" ||
+        e.key=="c" ||
+        e.key=="C" ||
+        e.key=="a" ||
+        e.key=="A" ||
+        e.key=="p" ||
+        e.key=="P"
+    )){
+        e.preventDefault();
+    }
+
+    if(e.key=="F12"){
+        e.preventDefault();
+    }
+
+});
+</script>
+<script>
+document.onkeydown=function(e){
+
+if(e.keyCode==123){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==73){
+return false;
+}
+
+if(e.ctrlKey && e.shiftKey && e.keyCode==74){
+return false;
+}
+
+if(e.ctrlKey && e.keyCode==85){
+return false;
+}
+
+}
+</script>
+
+</body>
+
+</html>
