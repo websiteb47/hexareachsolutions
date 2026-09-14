@@ -310,6 +310,45 @@ Object.assign(services, {
 
     },
 
+    "digital-podcast": {
+
+        tag: "Hexa Digital Podcast",
+
+        title: "Digital Podcast Production",
+
+        image: "images/gallery/Hexa Reach main.png",
+
+        gallery: [
+            "images/gallery/Podcast11.png",
+            "images/gallery/Podcast2.jpeg",
+            "images/gallery/Podcast3.jpeg",
+            "images/gallery/Podcast4.jpeg",
+            "images/gallery/Podcast5.jpeg"
+            
+        ],
+
+        desc1:
+        "Hexa Digital Podcast is your platform to amplify your brand voice. We help businesses and professionals launch, produce, and promote high-quality podcasts that build authority and connect with a wider audience.",
+
+        desc2:
+        "From recording and editing to cover art, show notes, and distribution across Spotify, Apple Podcasts, YouTube, and more — we handle every step of your podcast journey.",
+
+        desc3:
+        "Whether you're sharing industry insights, client stories, or thought leadership, our team ensures your podcast sounds professional, looks great, and reaches the right listeners.",
+
+        features: [
+
+            "Podcast Production",
+            "Audio & Video Editing",
+            "Multi-Platform Distribution",
+            "Cover Art Design",
+            "Show Notes & SEO",
+            "Audience Growth"
+
+        ]
+
+    },
+
     "content-marketing": {
 
         tag: "Content Strategy",
@@ -361,6 +400,21 @@ const links = document.querySelectorAll(".service-link");
 
 const mobileSelect = document.getElementById("serviceSelect");
 
+/*==================================================
+        GALLERY CLICK — delegated, attached once
+==================================================*/
+
+document.getElementById("podcastGallery").addEventListener("click", function(e){
+    if(!e.target.classList.contains("podcast-thumb")) return;
+    const img = e.target;
+    /* update big image */
+    document.getElementById("serviceImage").src = img.src;
+    /* update active highlight */
+    document.querySelectorAll("#podcastGallery .podcast-thumb")
+        .forEach(t => t.classList.remove("active"));
+    img.classList.add("active");
+});
+
 
 /*==================================================
         LOAD SERVICE
@@ -384,8 +438,30 @@ function loadService(name){
         /* Image */
 
         serviceImage.src = data.image;
-
         serviceImage.alt = data.title;
+
+        /* Gallery thumbnails */
+
+        const gallery = document.getElementById("podcastGallery");
+
+        if(data.gallery && data.gallery.length > 1){
+
+            gallery.innerHTML = "";
+
+            data.gallery.forEach((img, i) => {
+                const thumb = document.createElement("img");
+                thumb.src = img;
+                thumb.alt = data.title + " " + (i + 1);
+                thumb.className = "podcast-thumb" + (i === 0 ? " active" : "");
+                gallery.appendChild(thumb);
+            });
+
+            gallery.style.display = "flex";
+
+        } else {
+            gallery.style.display = "none";
+            gallery.innerHTML = "";
+        }
 
         /* Text */
 

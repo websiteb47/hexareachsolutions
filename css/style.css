@@ -13442,3 +13442,54 @@ img {
     width: auto;
   }
 }
+
+/* ==================================================
+   NAV DROPDOWN — SERVICES SUBMENU HOVER FIX
+================================================== */
+
+#mainmenu ul {
+    background: #0d1b2a !important;
+    border: 1px solid rgba(255,255,255,.08) !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+    height: auto !important;
+    min-width: 600px !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25) !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 6px !important;
+}
+
+#mainmenu li li a {
+    color: #ef6b13 !important;
+    padding: 10px 16px !important;
+    border-bottom: none !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: all .25s ease !important;
+    white-space: nowrap !important;
+}
+
+#mainmenu li li a i {
+    font-size: 16px !important;
+    color: #f3a221 !important;
+    flex-shrink: 0 !important;
+    width: 20px !important;
+    text-align: center !important;
+}
+
+#mainmenu li li a:hover,
+#mainmenu ul li:hover > a {
+    background: linear-gradient(135deg, #ef6b13, #f3a221) !important;
+    color: #ffffff !important;
+    padding-left: 20px !important;
+}
+
+#mainmenu li li a:hover i,
+#mainmenu ul li:hover > a i {
+    color: #ffffff !important;
+}

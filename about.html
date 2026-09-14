@@ -21,6 +21,7 @@
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" >
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <style>
         .about-banner{
     position:relative;
@@ -439,6 +440,136 @@ max-width:100%;
 }
 
 }
+
+/*==========================
+      TEAM SECTION
+==========================*/
+
+.team-section{
+    padding:90px 0;
+    background:#fff;
+}
+
+.team-card{
+    text-align:center;
+    padding:25px 15px;
+    border-radius:20px;
+    background:#f5f9ff;
+    border:1px solid #e8eef8;
+    transition:.35s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 50px rgba(21,101,192,.12);
+    background:#fff;
+}
+
+.team-img-wrap{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto 18px;
+    border:4px solid #1565c0;
+    box-shadow:0 8px 25px rgba(21,101,192,.2);
+}
+
+.team-img-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top;
+    transition:.4s;
+}
+
+.team-card:hover .team-img-wrap img{
+    transform:scale(1.08);
+}
+
+.team-card h5{
+    font-size:17px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:6px;
+}
+
+.team-card span{
+    font-size:14px;
+    color:#1565c0;
+    font-weight:600;
+    background:#edf5ff;
+    padding:5px 16px;
+    border-radius:50px;
+    display:inline-block;
+}
+
+.team-more{
+    margin-top:18px;
+    position:relative;
+}
+
+.team-arrow-btn{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    cursor:pointer;
+    transition:.3s ease;
+    box-shadow:0 6px 18px rgba(21,101,192,.3);
+}
+
+.team-arrow-btn img{
+    width:20px;
+    height:20px;
+    transition:.3s ease;
+}
+
+.team-card:hover .team-arrow-btn{
+    background:linear-gradient(135deg,#ef6b13,#f3a221);
+    transform:rotate(45deg);
+    box-shadow:0 8px 22px rgba(239,107,19,.35);
+}
+
+.team-hover-info{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease, opacity .4s ease, margin .3s ease;
+    opacity:0;
+    margin-top:0;
+}
+
+.team-card:hover .team-hover-info{
+    max-height:120px;
+    opacity:1;
+    margin-top:14px;
+}
+
+.team-hover-info p{
+    font-size:13px;
+    color:#555;
+    line-height:1.7;
+    margin:0;
+    padding:12px 10px;
+    background:#f0f6ff;
+    border-radius:12px;
+    border-left:3px solid #1565c0;
+}
+
+@media(max-width:768px){
+    .team-section{
+        padding:60px 0;
+    }
+    .team-img-wrap{
+        width:160px;
+        height:160px;
+    }
+}
+
     </style>
 
 </head>
@@ -480,6 +611,20 @@ max-width:100%;
 
         <li>
             <a class="menu-item" href="services.html">SERVICES</a>
+            <ul>
+                <li><a href="services.html#social-media"><i class="ri-megaphone-line"></i> Social Media Marketing</a></li>
+                <li><a href="services.html#branding"><i class="ri-award-line"></i> Brand Promotions</a></li>
+                <li><a href="services.html#graphic-design"><i class="ri-palette-line"></i> Graphic Designing</a></li>
+                <li><a href="services.html#ads"><i class="ri-line-chart-line"></i> Sponsored Ads</a></li>
+                <li><a href="services.html#business-profile"><i class="ri-building-line"></i> Business Pages</a></li>
+                <li><a href="services.html#podcast"><i class="ri-mic-line"></i> Podcast Marketing</a></li>
+                <li><a href="services.html#digital-podcast"><i class="ri-radio-line"></i> Digital Podcast</a></li>
+                <li><a href="services.html#whatsapp"><i class="ri-whatsapp-line"></i> WhatsApp API</a></li>
+                <li><a href="services.html#SEO"><i class="ri-search-eye-line"></i> SEO</a></li>
+                <li><a href="services.html#web"><i class="ri-code-box-line"></i> Web Design & Hosting</a></li>
+                <li><a href="services.html#video-editing"><i class="ri-movie-line"></i> Video Editing</a></li>
+                <li><a href="services.html#content-marketing"><i class="ri-article-line"></i> Content Marketing</a></li>
+            </ul>
         </li>
         <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
         <li><a class="menu-item" href="portfolio.html">PORTFOLIO</a></li>
@@ -794,6 +939,117 @@ max-width:100%;
 </section>
 
 <!-- ==========================
+     OUR TEAM
+=========================== -->
+<section class="team-section">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <span class="subtitle s2 wow fadeInUp">The People Behind the Work</span>
+            <h2 class="wow fadeInUp" data-wow-delay=".2s">Meet Our Team</h2>
+            <p class="wow fadeInUp" data-wow-delay=".3s" style="color:#666;font-size:17px;max-width:600px;margin:0 auto;">
+                A passionate crew of creatives, designers, and strategists working together to grow your brand.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".1s">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/gallery/M.V.Lakshmi Kutty - Anchor.png" alt="M.V. Lakshmi Kutty">
+                    </div>
+                    <h5>M.V. Lakshmi Kutty</h5>
+                    <span>Anchor</span>
+                    <div class="team-more">
+                        <div class="team-arrow-btn">
+                            <img src="images/ui/arrow-top-right-white.svg" alt="more">
+                        </div>
+                        <div class="team-hover-info">
+                            <p>Hosts and anchors the Hexa Digital Podcast, connecting guests and audiences with engaging conversations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/gallery/Bharanikapula Jani - Graphic Designer.png" alt="Bharanikapula Jani">
+                    </div>
+                    <h5>Bharanikapula Jani</h5>
+                    <span>Graphic Designer</span>
+                    <div class="team-more">
+                        <div class="team-arrow-btn">
+                            <img src="images/ui/arrow-top-right-white.svg" alt="more">
+                        </div>
+                        <div class="team-hover-info">
+                            <p>Creates eye-catching social media creatives, banners, and brand visuals that make businesses stand out.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/gallery/Srikanth Pulluri - Logo Designer.png" alt="Srikanth Pulluri">
+                    </div>
+                    <h5>Srikanth Pulluri</h5>
+                    <span>Logo Designer</span>
+                    <div class="team-more">
+                        <div class="team-arrow-btn">
+                            <img src="images/ui/arrow-top-right-white.svg" alt="more">
+                        </div>
+                        <div class="team-hover-info">
+                            <p>Crafts memorable logos and brand identities that capture the essence of every business we work with.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/gallery/Kola Venkata Dhansh - Graphic Designer.png" alt="Kola Venkata Dhanush">
+                    </div>
+                    <h5>Kola Venkata Dhanush</h5>
+                    <span>Graphic Designer</span>
+                    <div class="team-more">
+                        <div class="team-arrow-btn">
+                            <img src="images/ui/arrow-top-right-white.svg" alt="more">
+                        </div>
+                        <div class="team-hover-info">
+                            <p>Designs compelling marketing materials and digital creatives that drive engagement and brand recognition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+                <div class="team-card">
+                    <div class="team-img-wrap">
+                        <img src="images/gallery/Manikanta Lingampalli - Website Designer.png" alt="Manikanta Lingampalli">
+                    </div>
+                    <h5>Manikanta Lingampalli</h5>
+                    <span>Website Designer</span>
+                    <div class="team-more">
+                        <div class="team-arrow-btn">
+                            <img src="images/ui/arrow-top-right-white.svg" alt="more">
+                        </div>
+                        <div class="team-hover-info">
+                            <p>Builds modern, responsive websites that are fast, SEO-friendly, and designed to convert visitors into customers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ==========================
      OUR CERTIFICATIONS
 =========================== -->
 <section class="certification-section py-5">
@@ -845,7 +1101,6 @@ max-width:100%;
     </div>
 
 </section>
-             
 
             <!--get in touch-->
              <section>

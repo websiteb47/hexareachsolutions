@@ -1463,3 +1463,80 @@ font-size:15px;
     }
 
 }
+
+/*==================================================
+        PODCAST GALLERY THUMBNAILS
+==================================================*/
+
+.podcast-gallery{
+
+    display:flex;
+    gap:14px;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    margin-bottom:30px;
+    padding-bottom:6px;
+    scrollbar-width:thin;
+    scrollbar-color:#1565c0 #edf2f8;
+
+}
+
+.podcast-gallery::-webkit-scrollbar{
+    height:5px;
+}
+
+.podcast-gallery::-webkit-scrollbar-thumb{
+    background:#1565c0;
+    border-radius:10px;
+}
+
+.podcast-thumb{
+
+    flex:0 0 auto;
+    width:180px;
+    height:115px;
+    object-fit:cover;
+    object-position:center;
+    border-radius:14px;
+    cursor:pointer;
+    border:3px solid transparent;
+    transition:.3s ease;
+    opacity:1;
+    filter:brightness(0.85);
+
+}
+
+.podcast-thumb:hover{
+
+    filter:brightness(1);
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(21,101,192,.25);
+
+}
+
+.podcast-thumb.active{
+
+    border-color:#1565c0;
+    filter:brightness(1);
+    box-shadow:0 8px 22px rgba(21,101,192,.35);
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:768px){
+
+    .podcast-thumb{
+        width:140px;
+        height:90px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .podcast-thumb{
+        width:120px;
+        height:78px;
+    }
+
+}
