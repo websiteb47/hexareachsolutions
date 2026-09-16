@@ -15563,6 +15563,8 @@ img {
    NAV DROPDOWN — SERVICES SUBMENU HOVER FIX
 ================================================== */
 
+@media (min-width: 992px) {
+
 #mainmenu ul {
   background: #ffffff !important;
   border: 1px solid rgba(0, 0, 0, .08) !important;
@@ -15622,10 +15624,13 @@ img {
   margin-left: 0 !important;
 }
 
+} /* end desktop only */
 
 /* ==================================================
-   NAV DROPDOWN REDESIGN — FINAL OVERRIDE
+   NAV DROPDOWN REDESIGN — DESKTOP ONLY
 ================================================== */
+
+@media (min-width: 992px) {
 
 #mainmenu ul {
   background: #ffffff !important;
@@ -15710,4 +15715,90 @@ img {
 #mainmenu li li a:hover .d-menu-title,
 #mainmenu ul li:hover > a .d-menu-title {
   color: #fff !important;
+}
+
+} /* end @media desktop */
+
+/* ==================================================
+   MOBILE NAV — FORCE VISIBLE TEXT
+================================================== */
+
+@media (max-width: 991px) {
+
+  #mainmenu li li a {
+    color: #222222 !important;
+    background: transparent !important;
+    display: block !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-bottom: 1px solid rgba(0,0,0,.06) !important;
+    white-space: normal !important;
+  }
+
+  #mainmenu a span.d-menu-title {
+    color: #222222 !important;
+    display: inline !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    text-transform: none !important;
+    width: auto !important;
+    border-bottom: none !important;
+    margin: 0 !important;
+  }
+
+  #mainmenu li li a i.nav-icon {
+    display: none !important;
+  }
+
+  #mainmenu li li a:hover,
+  #mainmenu ul li:hover > a {
+    color: #ef6b13 !important;
+    background: transparent !important;
+    padding-left: 25px !important;
+  }
+
+  #mainmenu li li a:hover .d-menu-title {
+    color: #ef6b13 !important;
+  }
+
+}
+
+/* ==================================================
+   MOBILE MENU — TOP SPACING FIX
+================================================== */
+
+@media (max-width: 991px) {
+
+  header.header-mobile #mainmenu {
+    margin-top: 20px !important;
+    padding-top: 10px !important;
+  }
+
+  header.header-mobile #mainmenu > li:first-child {
+    margin-top: 8px !important;
+    border-top: 1px solid #eeeeee !important;
+  }
+
+}
+
+/* ==================================================
+   MOBILE — BANNER TOP PADDING FIX
+   (prevents content hiding behind fixed header)
+================================================== */
+
+@media (max-width: 991px) {
+
+  #subheader,
+  .jarallax,
+  section#subheader {
+    padding-top: 100px !important;
+  }
+
+  /* For pages without a subheader banner */
+  #content > div:first-child,
+  .no-top > section:first-child {
+    padding-top: 80px !important;
+  }
+
 }
