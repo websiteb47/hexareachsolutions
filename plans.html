@@ -278,6 +278,211 @@ margin-top:25px;
     z-index:3;
 }
 
+/* ==================================================
+   PLANS SECTION
+================================================== */
+
+.plans-section {
+    padding: 90px 0;
+    background: #f5f9ff;
+}
+
+.plan-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(0,0,0,.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 70px rgba(0,0,0,.13);
+}
+
+/* Basic — blue */
+.plan-basic .plan-header { background: linear-gradient(135deg,#0a4d9b,#1e88e5); }
+.plan-basic .ps-num { background: #1e88e5; }
+.plan-basic .plan-btn { background: linear-gradient(135deg,#0a4d9b,#1e88e5); }
+
+/* Gold — gold */
+.plan-gold .plan-header { background: linear-gradient(135deg,#b8860b,#f0c040); }
+.plan-gold .ps-num { background: #d4a017; }
+.plan-gold .plan-btn { background: linear-gradient(135deg,#b8860b,#f0c040); color: #1a1a1a !important; }
+
+/* Diamond — deep blue/purple */
+.plan-diamond .plan-header { background: linear-gradient(135deg,#0d1b4b,#1a3a8f,#3a6fd8); }
+.plan-diamond .ps-num { background: #1a3a8f; }
+.plan-diamond .plan-btn { background: linear-gradient(135deg,#0d1b4b,#3a6fd8); }
+
+.plan-featured {
+    border: 3px solid #d4a017;
+}
+
+.plan-popular-badge {
+    position: absolute;
+    top: 18px;
+    right: -28px;
+    background: #ef6b13;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 5px 40px;
+    transform: rotate(45deg);
+    letter-spacing: .5px;
+    z-index: 10;
+}
+
+.plan-header {
+    padding: 32px 28px 28px;
+    text-align: center;
+    color: #fff;
+}
+
+.plan-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(255,255,255,.2);
+    padding: 5px 16px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+}
+
+.plan-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.plan-price .currency {
+    font-size: 28px;
+    vertical-align: super;
+    font-weight: 700;
+}
+
+.plan-price .duration {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: .85;
+    display: block;
+    margin-top: 6px;
+}
+
+.plan-tagline {
+    font-size: 13px;
+    opacity: .9;
+    margin: 0;
+    font-style: italic;
+}
+
+.plan-body {
+    padding: 24px 22px;
+    flex: 1;
+}
+
+.plan-service {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #f0f4f8;
+}
+
+.plan-service:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ps-num {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ps-info strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+}
+
+.ps-info ul {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.ps-info ul li {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 3px;
+}
+
+.plan-footer {
+    padding: 0 22px 28px;
+}
+
+.plan-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 24px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .3s ease;
+    box-shadow: 0 8px 25px rgba(0,0,0,.15);
+}
+
+.plan-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 35px rgba(0,0,0,.22);
+    color: #fff;
+}
+
+@media(max-width:991px) {
+    .plans-section { padding: 60px 0; }
+    .plan-name { font-size: 26px; }
+    .plan-price { font-size: 38px; }
+}
+
+@media(max-width:576px) {
+    .plan-header { padding: 24px 20px 20px; }
+    .plan-body { padding: 18px 16px; }
+    .plan-footer { padding: 0 16px 22px; }
+}
+
     </style>
 
 </head>
@@ -317,28 +522,34 @@ margin-top:25px;
 
     <ul id="mainmenu">
         <li><a class="menu-item" href="index.html">HOME</a></li>
-        <li><a class="menu-item" href="about.html">ABOUT US</a></li>
+        <li>
+            <a class="menu-item" href="about.html">ABOUT US</a>
+            <ul>
+                <li><a href="about.html"><i class="ri-information-line nav-icon"></i><span class="d-menu-title">About Company</span></a></li>
+                <li><a href="about.html#team"><i class="ri-team-line nav-icon"></i><span class="d-menu-title">Our Team</span></a></li>
+            </ul>
+        </li>
 
         <li>
             <a class="menu-item" href="services.html">SERVICES</a>
             <ul>
-                <li><a href="services.html#social-media"><i class="ri-megaphone-line"></i> Social Media Marketing</a></li>
-                <li><a href="services.html#branding"><i class="ri-award-line"></i> Brand Promotions</a></li>
-                <li><a href="services.html#graphic-design"><i class="ri-palette-line"></i> Graphic Designing</a></li>
-                <li><a href="services.html#ads"><i class="ri-line-chart-line"></i> Sponsored Ads</a></li>
-                <li><a href="services.html#business-profile"><i class="ri-building-line"></i> Business Pages</a></li>
-                <li><a href="services.html#podcast"><i class="ri-mic-line"></i> Podcast Marketing</a></li>
-                <li><a href="services.html#digital-podcast"><i class="ri-radio-line"></i> Digital Podcast</a></li>
-                <li><a href="services.html#whatsapp"><i class="ri-whatsapp-line"></i> WhatsApp API</a></li>
-                <li><a href="services.html#SEO"><i class="ri-search-eye-line"></i> SEO</a></li>
-                <li><a href="services.html#web"><i class="ri-code-box-line"></i> Web Design & Hosting</a></li>
-                <li><a href="services.html#video-editing"><i class="ri-movie-line"></i> Video Editing</a></li>
-                <li><a href="services.html#content-marketing"><i class="ri-article-line"></i> Content Marketing</a></li>
+                <li><a href="services.html#social-media"><i class="ri-megaphone-line nav-icon"></i><span class="d-menu-title">Social Media Marketing</span></a></li>
+                <li><a href="services.html#branding"><i class="ri-award-line nav-icon"></i><span class="d-menu-title">Brand Promotions</span></a></li>
+                <li><a href="services.html#graphic-design"><i class="ri-palette-line nav-icon"></i><span class="d-menu-title">Graphic Designing</span></a></li>
+                <li><a href="services.html#ads"><i class="ri-line-chart-line nav-icon"></i><span class="d-menu-title">Sponsored Ads</span></a></li>
+                <li><a href="services.html#business-profile"><i class="ri-building-line nav-icon"></i><span class="d-menu-title">Business Pages</span></a></li>
+                <li><a href="services.html#podcast"><i class="ri-mic-line nav-icon"></i><span class="d-menu-title">Podcast Marketing</span></a></li>
+                <li><a href="services.html#digital-podcast"><i class="ri-radio-line nav-icon"></i><span class="d-menu-title">Digital Podcast</span></a></li>
+                <li><a href="services.html#whatsapp"><i class="ri-whatsapp-line nav-icon"></i><span class="d-menu-title">WhatsApp API</span></a></li>
+                <li><a href="services.html#SEO"><i class="ri-search-eye-line nav-icon"></i><span class="d-menu-title">SEO</span></a></li>
+                <li><a href="services.html#web"><i class="ri-code-box-line nav-icon"></i><span class="d-menu-title">Web Design & Hosting</span></a></li>
+                <li><a href="services.html#video-editing"><i class="ri-movie-line nav-icon"></i><span class="d-menu-title">Video Editing</span></a></li>
+                <li><a href="services.html#content-marketing"><i class="ri-article-line nav-icon"></i><span class="d-menu-title">Content Marketing</span></a></li>
             </ul>
         </li>
         <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
-        <li><a class="menu-item" href="portfolio.html">PORTFOLIO</a></li>
-        <li><a class="menu-item" href="contact.html">CONTACT</a></li>
+        <li><a class="menu-item" href="portfolio.html">OUR PORTFOLIO</a></li>
+        <li><a class="menu-item" href="contact.html">CONTACT US</a></li>
     </ul>
 </div>
                 <div class="de-flex-col">
@@ -420,167 +631,307 @@ margin-top:25px;
 <!-- section close -->
 
 <!-- Pricing Section -->
-<section>
+<section class="plans-section">
     <div class="container">
+
         <div class="text-center mb-5">
-    <div class="subtitle s2">Monthly Subscription Plans</div>
-    <h2>Social Media Marketing Packages</h2>
-    <p>
-        Affordable digital marketing plans designed to help businesses grow online with
-        creative content, advertising, branding, and lead generation.
-    </p>
-</div>
-        <div class="row g-4">
+            <div class="subtitle s2 wow fadeInUp">Monthly Subscription Plans</div>
+            <h2 class="wow fadeInUp" data-wow-delay=".2s">Complete Digital Growth Packages</h2>
+            <p class="wow fadeInUp" data-wow-delay=".3s">
+                Designed to help businesses grow online with podcast production, social media, SEO, ads, and more.
+            </p>
+        </div>
 
-            <!-- Basic Plan -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                <div class="bg-color text-light text-center p-30 rounded-1 h-100">
-                    <h3>Basic</h3>
+        <div class="row g-4 justify-content-center">
 
-                    <div class="spacer-single"></div>
-
-                    <img src="images/icons/basic.png" class="w-100px" alt="Basic Plan">
-
-                    <div class="spacer-single"></div>
-
-                    <h2 class="mb-2">₹8,000</h2>
-                    <span>Per Month</span>
-
-                    <p class="mt-3">
-                        Perfect for startups and local businesses looking to build a strong social media presence.
-                    </p>
-
-                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
-                        <span>Choose Plan</span>
-                    </a>
-
-                    <div class="text-start">
-                        <ul class="ul-check white">
-                            <li>10 Graphic Designs</li>
-                            <li>2 Creative Reels</li>
-                            <li>Festival & Special Day Posts</li>
-                            <li>Facebook & Instagram Management</li>
-                            <li>Google Business Profile Support</li>
-                            <li>Competitor Research</li>
-                        </ul>
+            <!-- BASIC PLAN -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".1s">
+                <div class="plan-card plan-basic">
+                    <div class="plan-header">
+                        <div class="plan-badge">Complete Digital Growth</div>
+                        <h2 class="plan-name">BASIC PLAN</h2>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>15,000
+                            <span class="duration">/ 30 Days</span>
+                        </div>
+                        <p class="plan-tagline">Your Brand, Our Strategy — Grow Online, Grow Faster</p>
                     </div>
-
+                    <div class="plan-body">
+                        <div class="plan-service">
+                            <div class="ps-num">01</div>
+                            <div class="ps-info">
+                                <strong>Podcast / Interview Shoot</strong>
+                                <ul>
+                                    <li>1 Podcast / Interview Shoot per month</li>
+                                    <li>5 Short Reels from the Shoot</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">02</div>
+                            <div class="ps-info">
+                                <strong>Social Media Creatives</strong>
+                                <ul>
+                                    <li>10 Social Media Flyers per month</li>
+                                    <li>Creative Content for Brand Promotion and Engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">03</div>
+                            <div class="ps-info">
+                                <strong>Reels & Video Content</strong>
+                                <ul>
+                                    <li>4 Reels per month (1 Reel every week)</li>
+                                    <li>Concept-based video content</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">04</div>
+                            <div class="ps-info">
+                                <strong>Social Media Management</strong>
+                                <ul>
+                                    <li>Facebook, Instagram, YouTube</li>
+                                    <li>Content Posting & Page Handling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">05</div>
+                            <div class="ps-info">
+                                <strong>Basic Local SEO</strong>
+                                <ul>
+                                    <li>Basic Local SEO Optimization</li>
+                                    <li>Google Business Profile Support</li>
+                                    <li>Improve Local Online Visibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">06</div>
+                            <div class="ps-info">
+                                <strong>Advertising</strong>
+                                <ul>
+                                    <li>Meta / Google Ads Setup & Management</li>
+                                    <li>Ad Budget Not Included</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="contact.html" class="plan-btn">Get Started Today <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Business Plan -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                <div class="bg-color-2 text-light text-center p-30 rounded-1 h-100">
-
-                    <h3>Business</h3>
-
-                    <div class="spacer-single"></div>
-
-                    <img src="images/icons/chart.png" class="w-100px" alt="Business Plan">
-
-                    <div class="spacer-single"></div>
-
-                    <h2 class="mb-2">₹12,000</h2>
-                    <span>Per Month</span>
-
-                    <p class="mt-3">
-                        Ideal for growing businesses that want better reach and customer engagement.
-                    </p>
-
-                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
-                        <span>Choose Plan</span>
-                    </a>
-
-                    <div class="text-start">
-                        <ul class="ul-check white">
-                            <li>Everything in Basic Plan</li>
-                            <li>Facebook & Instagram Sponsored Ads</li>
-                            <li>Weekly Marketing Strategy Meeting</li>
-                            <li>Campaign Performance Review</li>
-                            <li>Audience Targeting</li>
-                            <li>Priority Support</li>
-                        </ul>
+            <!-- GOLD PLAN -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                <div class="plan-card plan-gold plan-featured">
+                    <div class="plan-popular-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <div class="plan-badge">Premium Digital Growth Package</div>
+                        <h2 class="plan-name">GOLD PLAN</h2>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>25,000
+                            <span class="duration">/ 30 Days</span>
+                        </div>
+                        <p class="plan-tagline">More Visibility, More Opportunities, More Growth!</p>
                     </div>
-
+                    <div class="plan-body">
+                        <div class="plan-service">
+                            <div class="ps-num">01</div>
+                            <div class="ps-info">
+                                <strong>Podcast / Interview Shoot</strong>
+                                <ul>
+                                    <li>1 Podcast / Interview Shoot per month</li>
+                                    <li>5 Short Reels from the Podcast/Interview</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">02</div>
+                            <div class="ps-info">
+                                <strong>Social Media Creatives</strong>
+                                <ul>
+                                    <li>15 Social Media Flyers per month</li>
+                                    <li>Creative designs for brand promotion and engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">03</div>
+                            <div class="ps-info">
+                                <strong>Reels & Video Content</strong>
+                                <ul>
+                                    <li>5 Content Reels per month</li>
+                                    <li>Concept-based & engaging content for brand visibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">04</div>
+                            <div class="ps-info">
+                                <strong>Social Media Management</strong>
+                                <ul>
+                                    <li>Facebook, Instagram, YouTube</li>
+                                    <li>Content Posting & Page Handling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">05</div>
+                            <div class="ps-info">
+                                <strong>Google Business Profile Management</strong>
+                                <ul>
+                                    <li>Google Business Profile Management</li>
+                                    <li>Regular profile updates</li>
+                                    <li>Improve local visibility and customer reach</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">06</div>
+                            <div class="ps-info">
+                                <strong>SEO & Client Interaction</strong>
+                                <ul>
+                                    <li>SEO Optimization</li>
+                                    <li>Direct client interaction</li>
+                                    <li>Performance / SEO discussion every 15 days</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">07</div>
+                            <div class="ps-info">
+                                <strong>Advertising</strong>
+                                <ul>
+                                    <li>Advertising support / campaign management</li>
+                                    <li>Ad Budget is Separate</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-footer">
+                        <a href="contact.html" class="plan-btn">Let's Grow Together <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Professional Plan -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                <div class="bg-color-3 text-light text-center p-30 rounded-1 h-100">
-
-                    <h3>Professional</h3>
-
-                    <div class="spacer-single"></div>
-
-                    <img src="images/icons/startup.png" class="w-100px" alt="Professional Plan">
-
-                    <div class="spacer-single"></div>
-
-                    <h2 class="mb-2">₹18,000</h2>
-                    <span>Per Month</span>
-
-                    <p class="mt-3">
-                        Complete digital marketing solution for businesses ready to scale.
-                    </p>
-
-                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
-                        <span>Choose Plan</span>
-                    </a>
-
-                    <div class="text-start">
-                        <ul class="ul-check white">
-                            <li>Everything in Business Plan</li>
-                            <li>Google Business Optimization</li>
-                            <li>Local SEO Support</li>
-                            <li>Facebook & Google Campaigns</li>
-                            <li>Monthly WhatsApp Campaign</li>
-                            <li>Advanced Performance Reports</li>
-                        </ul>
+            <!-- DIAMOND PLAN -->
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                <div class="plan-card plan-diamond">
+                    <div class="plan-header">
+                        <div class="plan-badge">Ultimate Digital Growth Package</div>
+                        <h2 class="plan-name">DIAMOND PLAN</h2>
+                        <div class="plan-price">
+                            <span class="currency">₹</span>30,000
+                            <span class="duration">/ 30 Days</span>
+                        </div>
+                        <p class="plan-tagline">Premium Growth for a Stronger Tomorrow</p>
                     </div>
-
-                </div>
-            </div>
-
-            <!-- Premium Ads Plan -->
-            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                <div class="bg-success text-light text-center p-30 rounded-1 h-100">
-
-                    <h3>Premium (Ads)</h3>
-
-                    <div class="spacer-single"></div>
-
-                    <img src="images/icons/crown.png" class="w-150px" alt="Premium Plan">
-
-                    <div class="spacer-single"></div>
-
-                    <h2 class="mb-2">₹26,000</h2>
-                    <span>Per Month</span>
-
-                    <p class="mt-3">
-                        The ultimate package with paid advertising and complete digital marketing management.
-                    </p>
-
-                    <a class="btn-main fx-slide btn-dark-trans w-100 mb-4" href="contact.html">
-                        <span>Choose Plan</span>
-                    </a>
-
-                    <div class="text-start">
-                        <ul class="ul-check white">
-                            <li>Everything in Professional Plan</li>
-                            <li>Facebook & Instagram Ads</li>
-                            <li>Google & YouTube Ads</li>
-                            <li>WhatsApp Marketing</li>
-                            <li>LinkedIn & Pinterest Marketing</li>
-                            <li>Review Management & Customer Support</li>
-                        </ul>
+                    <div class="plan-body">
+                        <div class="plan-service">
+                            <div class="ps-num">01</div>
+                            <div class="ps-info">
+                                <strong>Podcast / Interview Shoot</strong>
+                                <ul>
+                                    <li>1 Podcast / Interview Shoot per month</li>
+                                    <li>Up to 8 Reels from the Podcast / Interview</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">02</div>
+                            <div class="ps-info">
+                                <strong>Social Media Creatives</strong>
+                                <ul>
+                                    <li>20 Social Media Flyers per month</li>
+                                    <li>Creative designs for brand promotion and engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">03</div>
+                            <div class="ps-info">
+                                <strong>Reels & Video Content</strong>
+                                <ul>
+                                    <li>5 Content Reels per month</li>
+                                    <li>Concept-based & engaging video content</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">04</div>
+                            <div class="ps-info">
+                                <strong>Social Media Management</strong>
+                                <ul>
+                                    <li>Facebook, Instagram, YouTube</li>
+                                    <li>Complete Content Posting & Page Handling</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">05</div>
+                            <div class="ps-info">
+                                <strong>Google Business Profile & SEO</strong>
+                                <ul>
+                                    <li>Google Business Profile Management</li>
+                                    <li>SEO Works & Optimization</li>
+                                    <li>Regular profile updates for better local visibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">06</div>
+                            <div class="ps-info">
+                                <strong>Competitor Analysis</strong>
+                                <ul>
+                                    <li>Competitor Analysis & Strategic Suggestions</li>
+                                    <li>Recommendations to improve brand positioning</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">07</div>
+                            <div class="ps-info">
+                                <strong>Special Promotional Campaign</strong>
+                                <ul>
+                                    <li>1 Special Promotional Campaign per month</li>
+                                    <li>Campaign planning & promotional support</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">08</div>
+                            <div class="ps-info">
+                                <strong>Meta Ads Support</strong>
+                                <ul>
+                                    <li>Meta Ads Support & Campaign guidance</li>
+                                    <li>Focused on generating Followers & Leads</li>
+                                    <li>Ad Budget is Separate</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plan-service">
+                            <div class="ps-num">09</div>
+                            <div class="ps-info">
+                                <strong>Client Direct Interaction</strong>
+                                <ul>
+                                    <li>Direct Client Interaction</li>
+                                    <li>Regular discussions for content, campaigns & growth strategy</li>
+                                    <li>Interaction every 10 days</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="plan-footer">
+                        <a href="contact.html" class="plan-btn">Let's Grow Together <i class="ri-arrow-right-line"></i></a>
+                    </div>
                 </div>
             </div>
 
         </div>
-
     </div>
 </section>
              

@@ -578,36 +578,32 @@ mobileSelect.addEventListener("change",function(){
 
 window.addEventListener("load",()=>{
 
-    const hash=window.location.hash.replace("#","");
+    const hash = window.location.hash.replace("#","");
 
-    if(hash && services[hash]){
+    const target = (hash && services[hash]) ? hash : "social-media";
 
-        loadService(hash);
+    loadService(target);
 
-        links.forEach(link=>{
-
-            link.classList.remove("active");
-
-            if(link.dataset.service===hash){
-
-                link.classList.add("active");
-
-            }
-
-        });
-
-        if(mobileSelect){
-
-            mobileSelect.value=hash;
-
+    links.forEach(link=>{
+        link.classList.remove("active");
+        if(link.dataset.service === target){
+            link.classList.add("active");
         }
+    });
 
+    if(mobileSelect){
+        mobileSelect.value = target;
     }
 
-    else{
-
-        loadService("social-media");
-
+    /* If arrived via hash from another page, scroll viewer into view */
+    if(hash && services[hash]){
+        setTimeout(()=>{
+            const section = document.querySelector(".services-section");
+            if(section){
+                const offset = section.getBoundingClientRect().top + window.scrollY - 100;
+                window.scrollTo({ top: offset, behavior:"smooth" });
+            }
+        }, 400);
     }
 
 });
