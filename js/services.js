@@ -551,6 +551,11 @@ mobileSelect.addEventListener("change",function(){
 
     const service=this.value;
 
+    if(service === "digital-podcast"){
+        window.location.href = "digital-podcast.html";
+        return;
+    }
+
     loadService(service);
 
     links.forEach(link=>{

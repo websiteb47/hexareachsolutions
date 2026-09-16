@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hexa Digital Podcast — Hexa Reach Solutions</title>
+    <link rel="icon" href="images/logo-icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Hexa Digital Podcast — Launch, produce, and promote your podcast with Hexa Reach Solutions" name="description">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/vendors.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/services.css">
+    <style>
+        .footer-logo{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.12);border-radius:18px;backdrop-filter:blur(10px);transition:all .4s ease;}
+        .footer-logo img{width:160px;height:auto;display:block;border-radius:12px;transition:all .4s ease;}
+        .footer-logo:hover{transform:translateY(-5px);background:rgba(255,255,255,0.12);box-shadow:0 12px 35px rgba(255,138,0,.35);}
+        .footer-logo:hover img{transform:scale(1.05);}
+
+        /* Banner */
+        .podcast-banner{position:relative;overflow:hidden;}
+        .podcast-banner .banner-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,30,80,.45),rgba(5,10,30,.35));z-index:1;}
+        .podcast-banner .container{position:relative;z-index:3;}
+
+        /* Active nav tab */
+        #mainmenu a.menu-item.active,
+        #mainmenu li a[href="digital-podcast.html"] {
+            color: var(--primary-color) !important;
+        }
+
+        /* Gallery */
+        .podcast-gallery{display:flex;gap:14px;flex-wrap:nowrap;overflow-x:auto;margin:30px 0;padding-bottom:6px;scrollbar-width:thin;scrollbar-color:#1565c0 #edf2f8;}
+        .podcast-gallery::-webkit-scrollbar{height:5px;}
+        .podcast-gallery::-webkit-scrollbar-thumb{background:#1565c0;border-radius:10px;}
+        .podcast-thumb{flex:0 0 auto;width:190px;height:120px;object-fit:cover;object-position:center;border-radius:14px;cursor:pointer;border:3px solid transparent;transition:.3s ease;filter:brightness(0.85);}
+        .podcast-thumb:hover{filter:brightness(1);transform:translateY(-5px);box-shadow:0 12px 28px rgba(21,101,192,.25);}
+        .podcast-thumb.active{border-color:#1565c0;filter:brightness(1);box-shadow:0 8px 22px rgba(21,101,192,.35);transform:translateY(-3px);}
+
+        /* Main Image */
+        .podcast-main-img{width:100%;height:480px;object-fit:cover;border-radius:25px;box-shadow:0 20px 60px rgba(0,0,0,.12);}
+
+        /* Features */
+        .feature-item{display:flex;align-items:center;gap:14px;padding:18px;border-radius:15px;background:#f8fbff;border:1px solid #e5edf8;transition:.35s;}
+        .feature-item i{width:42px;height:42px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,#ef6b13,#f3a221);color:#fff;font-size:18px;}
+        .feature-item span{font-weight:600;color:#333;}
+        .feature-item:hover{transform:translateY(-6px);box-shadow:0 15px 35px rgba(21,101,192,.12);background:#1565c0;}
+        .feature-item:hover span{color:#fff;}
+        .feature-item:hover i{background:#fff;color:#1565c0;}
+
+        /* CTA */
+        .podcast-cta{background:linear-gradient(135deg,#0A4D9B,#1E88E5,#42A5F5);border-radius:30px;padding:60px;position:relative;overflow:hidden;}
+        .podcast-cta::before{content:"";position:absolute;width:280px;height:280px;background:rgba(255,255,255,.07);border-radius:50%;top:-120px;right:-90px;}
+        .podcast-cta h2{font-size:40px;font-weight:700;color:#fff;margin-bottom:16px;}
+        .podcast-cta p{font-size:17px;color:rgba(255,255,255,.9);max-width:650px;margin:0;}
+        .podcast-cta-btn{display:inline-flex;align-items:center;gap:12px;padding:16px 36px;background:#fff;color:#0A4D9B;font-weight:700;text-decoration:none;border-radius:60px;transition:.4s;}
+        .podcast-cta-btn:hover{transform:translateY(-5px);background:#0A4D9B;color:#fff;box-shadow:0 20px 40px rgba(0,0,0,.18);}
+
+        @media(max-width:768px){
+            .podcast-main-img{height:250px;}
+            .podcast-cta{padding:35px 25px;border-radius:20px;}
+            .podcast-cta h2{font-size:26px;}
+            .podcast-thumb{width:140px;height:90px;}
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrapper">
+    <a href="#" id="back-to-top"></a>
+    <div id="de-loader"></div>
+
+    <!-- Header -->
+    <header class="transparent header-light header-float">
+        <div class="container-float">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-inner">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/Hexa-logo.png" alt="">
+                                        <img class="logo-scroll" src="images/Hexa-logo.png" alt="">
+                                        <img class="logo-mobile" src="images/Hexa-logo.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">HOME</a></li>
+                                    <li>
+                                        <a class="menu-item" href="about.html">ABOUT US</a>
+                                        <ul>
+                                            <li><a href="about.html"><i class="ri-information-line nav-icon"></i><span class="d-menu-title">About Company</span></a></li>
+                                            <li><a href="about.html#team"><i class="ri-team-line nav-icon"></i><span class="d-menu-title">Our Team</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="menu-item" href="services.html">SERVICES</a>
+                                        <ul>
+                                            <li><a href="services.html#social-media"><i class="ri-megaphone-line nav-icon"></i><span class="d-menu-title">Social Media Marketing</span></a></li>
+                                            <li><a href="services.html#branding"><i class="ri-award-line nav-icon"></i><span class="d-menu-title">Brand Promotions</span></a></li>
+                                            <li><a href="services.html#graphic-design"><i class="ri-palette-line nav-icon"></i><span class="d-menu-title">Graphic Designing</span></a></li>
+                                            <li><a href="services.html#ads"><i class="ri-line-chart-line nav-icon"></i><span class="d-menu-title">Sponsored Ads</span></a></li>
+                                            <li><a href="services.html#business-profile"><i class="ri-building-line nav-icon"></i><span class="d-menu-title">Business Pages</span></a></li>
+                                            <li><a href="services.html#podcast"><i class="ri-mic-line nav-icon"></i><span class="d-menu-title">Podcast Marketing</span></a></li>
+                                            <li><a href="digital-podcast.html"><i class="ri-radio-line nav-icon"></i><span class="d-menu-title">Digital Podcast</span></a></li>
+                                            <li><a href="services.html#whatsapp"><i class="ri-whatsapp-line nav-icon"></i><span class="d-menu-title">WhatsApp API</span></a></li>
+                                            <li><a href="services.html#SEO"><i class="ri-search-eye-line nav-icon"></i><span class="d-menu-title">SEO</span></a></li>
+                                            <li><a href="services.html#web"><i class="ri-code-box-line nav-icon"></i><span class="d-menu-title">Web Design & Hosting</span></a></li>
+                                            <li><a href="services.html#video-editing"><i class="ri-movie-line nav-icon"></i><span class="d-menu-title">Video Editing</span></a></li>
+                                            <li><a href="services.html#content-marketing"><i class="ri-article-line nav-icon"></i><span class="d-menu-title">Content Marketing</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="menu-item" href="plans.html">OUR PACKAGES</a></li>
+                                    <li><a class="menu-item active" href="digital-podcast.html">DIGITAL PODCAST</a></li>
+                                    <li><a class="menu-item" href="portfolio.html">OUR PORTFOLIO</a></li>
+                                    <li><a class="menu-item" href="contact.html">CONTACT US</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <a class="btn-main fx-slide" href="contact.html"><span>Get Free Proposal</span></a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                                <div id="btn-extra" class="img">
+                                    <img src="images/ui/dots.svg" class="" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="no-bottom no-top" id="content">
+        <div id="top"></div>
+
+        <!-- Banner -->
+        <section id="subheader" class="jarallax relative podcast-banner">
+            <img src="images/gallery/Hexa Reach main.png" class="jarallax-img" alt="" style="opacity:1;filter:brightness(.75);">
+            <div class="banner-overlay"></div>
+            <div class="container relative z-2">
+                <div class="row align-items-center" style="min-height:380px;">
+                    <div class="col-lg-7">
+                        <!-- <div class="subtitle s2 wow fadeInUp mb-2">Hexa Reach Solutions</div> -->
+                        <!-- <h1 class="wow fadeInUp" data-wow-delay=".3s">Hexa Digital Podcast</h1> -->
+                        <!-- <p class="lead text-white wow fadeInUp" data-wow-delay=".5s" style="opacity:.9;max-width:520px;"> -->
+                            <!-- Real Conversations. Real Impact. Amplify your brand voice with professional podcast production. -->
+                        <!-- </p> -->
+                        <div class="crumb-wrapper mt-3">
+                            <ul class="crumb wow fadeInUp" data-wow-delay=".7s">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li class="active">Digital Podcast</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section style="padding:90px 0;background:#f5f9ff;">
+            <div class="container">
+                <div class="row g-5 align-items-start">
+
+                    <!-- Left: Image + Gallery -->
+                    <div class="col-lg-6 wow fadeInLeft">
+                        <img id="podcastMainImg" src="images/gallery/Podcast2.jpeg" alt="Hexa Digital Podcast" class="podcast-main-img">
+
+                        <!-- Thumbnails -->
+                        <div class="podcast-gallery" id="podcastGalleryPage">
+                            <img src="images/gallery/Podcast1.jpeg"  class="podcast-thumb active" alt="Podcast 1">
+                            <img src="images/gallery/Podcast2.jpeg"  class="podcast-thumb" alt="Podcast 2">
+                            <img src="images/gallery/Podcast3.jpeg"  class="podcast-thumb" alt="Podcast 3">
+                            <img src="images/gallery/Podcast4.jpeg"  class="podcast-thumb" alt="Podcast 4">
+                            <img src="images/gallery/Podcast5.jpeg"  class="podcast-thumb" alt="Podcast 5">
+                        </div>
+                    </div>
+
+                    <!-- Right: Details -->
+                    <div class="col-lg-6 wow fadeInRight">
+                        <span class="service-tag">Hexa Digital Podcast</span>
+                        <h2 style="font-size:42px;font-weight:700;color:#111;margin:18px 0 22px;line-height:1.25;">Digital Podcast Production</h2>
+
+                        <p style="font-size:17px;color:#666;line-height:1.9;margin-bottom:22px;">
+                            Hexa Digital Podcast is your platform to amplify your brand voice. We help businesses and professionals launch, produce, and promote high-quality podcasts that build authority and connect with a wider audience.
+                        </p>
+                        <p style="font-size:17px;color:#666;line-height:1.9;margin-bottom:22px;">
+                            From recording and editing to cover art, show notes, and distribution across Spotify, Apple Podcasts, YouTube, and more — we handle every step of your podcast journey.
+                        </p>
+                        <p style="font-size:17px;color:#666;line-height:1.9;margin-bottom:32px;">
+                            Whether you're sharing industry insights, client stories, or thought leadership, our team ensures your podcast sounds professional, looks great, and reaches the right listeners.
+                        </p>
+
+                        <!-- Features -->
+                        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-bottom:36px;">
+                            <div class="feature-item"><i class="ri-mic-2-line"></i><span>Podcast Production</span></div>
+                            <div class="feature-item"><i class="ri-movie-line"></i><span>Audio & Video Editing</span></div>
+                            <div class="feature-item"><i class="ri-global-line"></i><span>Multi-Platform Distribution</span></div>
+                            <div class="feature-item"><i class="ri-palette-line"></i><span>Cover Art Design</span></div>
+                            <div class="feature-item"><i class="ri-article-line"></i><span>Show Notes & SEO</span></div>
+                            <div class="feature-item"><i class="ri-line-chart-line"></i><span>Audience Growth</span></div>
+                        </div>
+
+                        <a href="contact.html" class="service-btn">
+                            Get in Touch
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section style="padding:80px 0;">
+            <div class="container">
+                <div class="podcast-cta">
+                    <div class="row align-items-center">
+                        <div class="col-lg-8">
+                            <h2>Ready to Launch Your Podcast?</h2>
+                            <p>Let Hexa Reach Solutions handle everything — from concept to distribution. Your story deserves to be heard.</p>
+                        </div>
+                        <div class="col-lg-4 text-lg-end text-center mt-4 mt-lg-0">
+                            <a href="contact.html" class="podcast-cta-btn">
+                                Get Free Consultation <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- Content End -->
+
+    <!-- Footer -->
+    <footer class="footer-light">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="spacer-20"></div>
+                    <div class="footer-logo">
+                        <img src="images/Hexa-logo.png" alt="Hexa Reach Solutions">
+                    </div>
+                    <p>At Hexa Reach Solutions, we help businesses build a powerful digital presence through creative marketing, strategic branding, social media management, website development, SEO, paid advertising, and content that delivers measurable growth.</p>
+                    <div class="social-icons mb-sm-30">
+                        <a href="https://www.facebook.com/hexareachsolutions/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/hexareachsolutions/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/HexaReach"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.youtube.com/@HexaReachDigitalPodcast"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/@hexareachsolutions"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="widget">
+                                <h5>Hexa Reach Solutions</h5>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="plans.html">Plans</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                            <div class="widget">
+                                <h5>Our Services</h5>
+                                <ul>
+                                    <li><a href="services.html#social-media">Social Media Marketing</a></li>
+                                    <li><a href="services.html#branding">Brand Promotions</a></li>
+                                    <li><a href="services.html#SEO">Local SEO</a></li>
+                                    <li><a href="services.html#web">Website Designing</a></li>
+                                    <li><a href="services.html#podcast">Podcast Marketing</a></li>
+                                    <li><a href="digital-podcast.html">Digital Podcast</a></li>
+                                    <li><a href="services.html#video-editing">Video Editing</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
+                    <div class="widget">
+                        <div class="contact-item">
+                            <div class="contact-icon location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-info"><h6>Office Location</h6><p>Near Jaya Grand, Arundelpet 10th Line, Guntur - 522002</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-info"><h6>Email Us</h6><p>hexareachsolution919@gmail.com</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="contact-info"><h6>Call Us</h6><p>+91 9581823990</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex">
+                            <div class="text-center">Copyright © 2026 Hexa Reach Solutions. All Rights Reserved.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="js/vendors.js"></script>
+<script src="js/designesia.js"></script>
+
+<!-- Gallery click -->
+<script>
+document.getElementById("podcastGalleryPage").addEventListener("click", function(e){
+    if(!e.target.classList.contains("podcast-thumb")) return;
+    document.getElementById("podcastMainImg").src = e.target.src;
+    this.querySelectorAll(".podcast-thumb").forEach(t => t.classList.remove("active"));
+    e.target.classList.add("active");
+});
+</script>
+
+</body>
+</html>
