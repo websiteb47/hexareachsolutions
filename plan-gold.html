@@ -485,6 +485,88 @@ margin-top:25px;
 
     </style>
 
+
+    <style>
+        .detailed-service-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+            background: #fff;
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid #0A4D9B;
+        }
+        .detailed-service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        }
+        .dsc-num {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            font-size: 80px;
+            font-weight: 900;
+            color: rgba(10, 77, 155, 0.05);
+            line-height: 1;
+        }
+        .dsc-num-circle {
+            width: 45px;
+            height: 45px;
+            background: #0A4D9B;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .dsc-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #111;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .dsc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 25px 0;
+            position: relative;
+            z-index: 2;
+        }
+        .dsc-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        .dsc-list li::before {
+            content: "•";
+            color: #0A4D9B;
+            font-weight: bold;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: -5px;
+        }
+        .dsc-tag {
+            font-family: 'Caveat', 'Segoe Script', cursive;
+            font-size: 1.4rem;
+            color: #0A4D9B;
+            font-weight: 600;
+            margin-top: auto;
+            position: relative;
+            z-index: 2;
+            transform: rotate(-3deg);
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -575,60 +657,137 @@ margin-top:25px;
 
             <div id="top"></div>
 <!-- section begin -->
-<section id="subheader" class="jarallax relative pricing-banner">
 
-    <!-- Background Image -->
-    <img src="images/background/bg2.png"
-         class="jarallax-img"
-         alt=""
-         style="opacity:.95; filter:brightness(.85);">
-
-    <!-- Dark Overlay -->
-    <div class="banner-overlay"></div>
-
-    <!-- Spider Web Canvas -->
-    <canvas id="pricingNetworkCanvas"></canvas>
-
-    <div class="container relative z-2">
-        <div class="row justify-content-between align-items-center">
-
-            <div class="col-lg-6">
-
-                <div class="subtitle s2 wow fadeInUp mb-2">
-                    Affordable Digital Solutions
+    <section class="plan-detailed-view padding-top-90 padding-bottom-90">
+        <div class="container">
+            <div class="row text-center mb-5 mt-5">
+                <div class="col-12">
+                    <div class="plan-badge d-inline-block px-4 py-2 bg-primary text-white rounded-pill mb-3 fw-bold">PREMIUM DIGITAL GROWTH PACKAGE</div>
+                    <h1 class="display-3 fw-bolder text-uppercase mb-2">GOLD PLAN</h1>
+                    <h2 class="display-5 text-primary fw-bold mb-3"><span class="fs-2 text-dark">₹</span> 25,000 <span class="fs-4 text-muted">/ 30 DAYS</span></h2>
+                    <p class="fs-4 fst-italic text-secondary">More Visibility, More Opportunities, More Growth!</p>
+                    <hr class="w-25 mx-auto mt-4 mb-4 border-2 border-primary">
+                    <h3 class="mb-5 text-uppercase fw-bold">Our Services <span class="text-secondary fw-normal fs-5 d-block mt-2">Complete Digital Solutions For Your Business</span></h3>
                 </div>
-
-                <div class="clearfix"></div>
-
-                <h1 class="wow fadeInUp" data-wow-delay=".4s">
-                    Our Pricing Plans
-                </h1>
-
-                <div class="crumb-wrapper">
-                    <ul class="crumb wow fadeInUp" data-wow-delay=".8s">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="active">
-                            Our Pricing Plans
-                        </li>
-                    </ul>
-                </div>
-
             </div>
-
-            <div class="w-40 abs abs-middle end-0 xs-hide">
-                <!-- Optional Pricing Illustration -->
-                <!-- <img src="images/misc/pricing.png"
-                     class="w-100 wow scaleIn"
-                     data-wow-duration="2s"
-                     alt="Pricing"> -->
+            
+            <div class="row g-4 justify-content-center">
+                
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">01</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">01</div>
+                <h4 class="dsc-title mb-0">PODCAST / INTERVIEW SHOOT</h4>
             </div>
-
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>1 Podcast / Interview Shoot per month</li><li>5 Short Reels from the Podcast/Interview</li>
+            </ul>
+            <div class="dsc-tag text-center">Real Conversations<br>Real Impact</div>
         </div>
     </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">02</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">02</div>
+                <h4 class="dsc-title mb-0">SOCIAL MEDIA CREATIVES</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>15 Social Media Flyers per month</li><li>Creative designs for brand promotion and engagement</li>
+            </ul>
+            <div class="dsc-tag text-center">Creative Designs<br>Stronger Brand</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">03</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">03</div>
+                <h4 class="dsc-title mb-0">REELS & VIDEO CONTENT</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>5 Content Reels per month</li><li>Concept-based video content</li><li>Engaging content focused on brand visibility</li>
+            </ul>
+            <div class="dsc-tag text-center">Short Videos<br>Big Opportunities</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">04</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">04</div>
+                <h4 class="dsc-title mb-0">SOCIAL MEDIA MANAGEMENT</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>Facebook, Instagram, YouTube</li><li>Content Posting & Page Handling</li>
+            </ul>
+            <div class="dsc-tag text-center">Consistent Presence<br>Better Engagement</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">05</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">05</div>
+                <h4 class="dsc-title mb-0">GOOGLE BUSINESS PROFILE MANAGEMENT</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>Google Business Profile Management</li><li>Regular profile updates</li><li>Improve local visibility and customer reach</li>
+            </ul>
+            <div class="dsc-tag text-center">Be Found Locally<br>Grow Steadily</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">06</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">06</div>
+                <h4 class="dsc-title mb-0">SEO & CLIENT INTERACTION</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>SEO Optimization</li><li>Direct client interaction</li><li>Performance / SEO discussion every 15 days</li>
+            </ul>
+            <div class="dsc-tag text-center">Better Rankings<br>More Business</div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="detailed-service-card p-4 d-flex flex-column">
+            <div class="dsc-num">07</div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="dsc-num-circle">07</div>
+                <h4 class="dsc-title mb-0">ADVERTISING</h4>
+            </div>
+            <ul class="dsc-list mt-3 flex-grow-1">
+                <li>Advertising support / campaign management</li><li><strong>Ad Budget is Separate</strong></li>
+            </ul>
+            <div class="dsc-tag text-center">Target Right Audience<br>Drive Real Results</div>
+        </div>
+    </div>
+    
+            </div>
 
-</section>
+            <div class="row mt-5 pt-3">
+                <div class="col-12 text-center text-white p-4 rounded-3 shadow-lg" style="background: linear-gradient(135deg, #0A4D9B, #42A5F5);">
+                    <h3 class="display-6 fw-bold mb-4">Let's Grow Together!</h3>
+                    <div class="d-flex justify-content-center gap-5 mb-4 flex-wrap">
+                        <div><i class="ri-lightbulb-line fs-2 d-block text-warning"></i> Strategic Planning</div>
+                        <div><i class="ri-palette-line fs-2 d-block text-info"></i> Creative Ideas</div>
+                        <div><i class="ri-bar-chart-line fs-2 d-block text-success"></i> Measurable Growth</div>
+                        <div><i class="ri-handshake-line fs-2 d-block text-light"></i> Long-Term Partnership</div>
+                    </div>
+                    <a href="contact.html" class="btn btn-light btn-lg rounded-pill px-5 py-3 fw-bold text-primary shadow-sm">Let's Grow Together <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 <!-- section close -->
 
 <!-- Pricing Section -->
@@ -721,7 +880,7 @@ margin-top:25px;
                         </div>
                     </div>
                     <div class="plan-footer">
-                        <a href="plan-basic.html" class="plan-btn">More Details <i class="ri-arrow-right-line"></i></a>
+                        <a href="contact.html" class="plan-btn">Get Started Today <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
             </div>
@@ -927,7 +1086,7 @@ margin-top:25px;
                         </div>
                     </div>
                     <div class="plan-footer">
-                        <a href="plan-diamond.html" class="plan-btn">More Details <i class="ri-arrow-right-line"></i></a>
+                        <a href="contact.html" class="plan-btn">Let's Grow Together <i class="ri-arrow-right-line"></i></a>
                     </div>
                 </div>
             </div>

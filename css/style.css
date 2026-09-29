@@ -15926,3 +15926,93 @@ img {
         color: #5d6c7b !important;
     }
 }
+
+/* Service Card Hover Effects */
+.service-card-wrapper {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.service-card-wrapper:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 150, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+}
+
+
+/* Service Card Hover Effects */
+.service-card-wrapper {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.service-card-wrapper:hover {
+    transform: translateY(-12px) scale(1.02) !important;
+    box-shadow: 0 15px 45px rgba(0, 150, 255, 0.4), 0 0 20px rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    z-index: 10 !important;
+}
+
+/* Enhanced Service Card Hover Effects */
+.service-card-wrapper {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border 0.4s ease !important;
+    border: 1px solid transparent;
+}
+.service-card-wrapper:hover {
+    transform: translateY(-15px) scale(1.03) !important;
+    box-shadow: 0 20px 50px rgba(0, 150, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.3) !important;
+    border: 1px solid rgba(255,255,255,0.4) !important;
+    z-index: 10 !important;
+}
+
+/* Service Card Text Thickness */
+.service-card-wrapper h3 {
+    font-weight: 800 !important;
+}
+
+.service-card-wrapper p {
+    font-weight: 600 !important;
+}
+
+.service-card-wrapper a span {
+    font-weight: 700 !important;
+}
+
+/* Footer text visibility improvements */
+footer h5,
+footer h6,
+footer .widget h5,
+footer .widget h6,
+footer .contact-info h6 {
+    color: #0b1b42 !important;
+    font-weight: 800 !important;
+}
+
+footer p,
+footer li a,
+footer .widget p,
+footer .contact-info p,
+footer .footer-logo + p {
+    color: #111111 !important;
+    font-weight: 600 !important;
+}
+
+footer i.fa-solid,
+footer i.fa-brands,
+footer .contact-icon i,
+footer .social-icons i {
+    color: #0b1b42 !important;
+}
+
+/* Add subtle hover to footer links to keep them clearly interactive */
+footer li a:hover {
+    color: #0d6efd !important;
+    text-decoration: underline;
+}
+
+/* Override for contact info headers to Red as requested */
+footer .contact-info h6 {
+    color: #e53935 !important;
+}
+
+/* Also changing the icons to red to match the headings nicely */
+footer .contact-icon i {
+    color: #e53935 !important;
+}
